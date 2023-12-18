@@ -54,8 +54,8 @@ export default ({ data }) => {
         {preview == 1 ? (
           <div className={styles.mobile}>
 
-            {data.slice(startIndex, endIndex).map((items) =>
-              (<Card items_data={items} />)
+            {data.slice(startIndex, endIndex).map((items, index) =>
+              (<Card key={index} items_data={items} />)
             )}
 
             <div className={styles.navigation}>
