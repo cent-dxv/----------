@@ -13,15 +13,13 @@ const Pagination = ({ data }) => {
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
 
-
-
   return (
     <div>
       <h1>Pagination Example</h1>
 
       <div>
-        {data.slice(startIndex, endIndex).map((item) => (
-          <div key={item.id}>{item.title}</div>
+        {data.slice(startIndex, endIndex).map((item, index) => (
+          <div key={index}>{item.title}</div>
           // Add your item rendering logic here
         ))}
       </div>
