@@ -1,0 +1,220 @@
+/* styles/Dropdown.module.css */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  width: 460px;
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  padding-top: 10px;
+  filter: drop-shadow(0px 0px 40px #dee8f1);
+  z-index: 1;
+}
+
+.arrow {
+  position: absolute;
+  top: -10px;
+  /* left: 50%; */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+
+.placeholder {
+  position: absolute;
+  height: 50px;
+  width: 73px;
+  margin-bottom: 10px;
+  // background: #00000061;
+  margin-top: -35px;
+  left: 40px;
+}
+
+// .dropdownContainer {
+//   // position: relative;
+//   display: inline-block;}
+
+// .dropdownTrigger {
+//   cursor: pointer;
+//   width:200px;
+//   border-radius: 16px;
+//   background: #FFF;
+//   box-shadow: 0px 0px 40px 0px #DEE8F1;
+// }
+
+.dropdownEasy {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  padding-top: 5px;
+  filter: drop-shadow(0px 0px 40px #dee8f1);
+  z-index: 1;
+  top: 5px; 
+  width: 250px;
+  border-radius: 16px;
+  background: #fff;
+  overflow: hidden;
+  max-height: 60px;
+  transition: max-height 0.5s ease-out;
+
+  div {
+    display: block;
+    padding-right: 10px;
+
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    // flex-direction: column;
+    justify-content: flex-end;
+    div {
+      flex-direction: column;
+      align-items: end;
+      padding-top: 5px;
+      .name {
+        color: #1c2135;
+        text-align: right;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px; /* 100% */
+      }
+      .email {
+        color: #717171;
+        text-align: right;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+      }
+    }
+
+    .avatar,
+    img {
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      // background: #161616;
+    }
+  }
+  .horizontalline {
+    width: 85%;
+    justify-content: center;
+    border-bottom: 0.5px solid #dee8f1;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: auto;
+  }
+  ul {
+    margin-top: 20px;
+    .cart{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span{
+        display: flex;
+      }
+      .cart_amount{
+        background: #FFB703;
+        color:#FFF;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px; 
+        border-radius: 4px;
+        margin-left: 15px;
+      }
+    }
+  }
+  li {
+    display: flex;
+    // display: block;
+    justify-content: end;
+    padding: 10px;
+    margin-left: 0 !important;
+    text-decoration: none;
+    color: #333;
+    text-align: right;
+    .logout{
+      color:#FF5B37
+    }
+    img{
+      margin-left: 10px;
+    }
+  }
+  li:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+.dropdownContainer.active .dropdownEasy {
+  max-height: 500px; /* Adjust the max height as needed */
+}
+
+
+@media (max-width: 480px) {
+
+  .dropdownContent{
+    display: none;
+  }
+}
+
+
+.drawer_container{
+  .drawer{ 
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .name ,.email{
+
+    font-size: 24px;
+  }
+  li{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  img{
+    width: 25px;
+    height: 25px;
+  }
+  .avatar{
+    img {
+      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      // background: #161616;
+    }
+  }
+
+  .cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span{
+      display: flex;
+    }
+    .cart_amount{
+      background: #FFB703;
+      color:#FFF;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px; 
+      border-radius: 4px;
+      margin-left: 15px;
+    }
+  }
+}
+
