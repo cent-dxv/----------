@@ -3,18 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 80 -H 0.0.0.0",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 80 -H 0.0.0.0",
     "lint": "next lint"
   },
   "dependencies": {
+    "antd": "^5.12.2",
+    "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.4"
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.0.4"
+    "eslint-config-next": "14.0.4",
+    "sass": "^1.69.5"
   }
 }
