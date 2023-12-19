@@ -55,6 +55,7 @@ function Navbar() {
               />
             </button>
             <Image
+            className={`${style_navbar.drawer}`}
             style={{"margin-left": "5px"}}
                 width={40}
                 height={40}

@@ -4,13 +4,16 @@ import Image from 'next/image'
 
 function Card({ items_data }) {
 
+
+
+  
   console.log("\n" * 30, " =>>>", items_data?.title, "\n", items_data)
   return (
     <div className={styles.card}>
       <div className={styles.card_image} >
         <Image
           fill
-          src="https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src= {items_data?.image_url}
           objectFit='cover'
           alt="Logo"
         />

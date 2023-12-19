@@ -14,7 +14,7 @@ function Course_Main() {
 
 
     {
-      "image_url": "https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image_url": "https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "title": "1 רטסמס הקיטמתמ תניכמ",
       "subtitle": "ןושאר",
       "lectureure": "ןהכ זרא",
@@ -42,7 +42,7 @@ function Course_Main() {
       "price": "185.00",
 
     }, {
-      "image_url": "https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image_url": "https://images.pexels.com/photos/4497761/pexels-photo-4497761.jpeg",
       "title": "4 רטסמס הקיטמתמ תניכמ",
       "subtitle": "ןושאר",
       "lectureure": "ןהכ זרא",
@@ -51,7 +51,7 @@ function Course_Main() {
       "price": "185.00",
 
     }, {
-      "image_url": "https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image_url": "https://images.pexels.com/photos/5466193/pexels-photo-5466193.jpeg",
       "title": "5 רטסמס הקיטמתמ תניכמ",
       "subtitle": "ןושאר",
       "lectureure": "ןהכ זרא",
@@ -69,7 +69,7 @@ function Course_Main() {
       "price": "185.00",
 
     }, {
-      "image_url": "https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image_url": "https://images.pexels.com/photos/4492160/pexels-photo-4492160.jpeg",
       "title": "רטסמס הקיטמתמ תניכמ",
       "subtitle": "ןושאר",
       "lectureure": "ןהכ זרא",
@@ -78,7 +78,7 @@ function Course_Main() {
       "price": "185.00",
 
     }, {
-      "image_url": "https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image_url": "https://images.pexels.com/photos/6929206/pexels-photo-6929206.jpeg",
       "title": "רטסמס הקיטמתמ תניכמ",
       "subtitle": "ןושאר",
       "lectureure": "ןהכ זרא",
@@ -87,7 +87,7 @@ function Course_Main() {
       "price": "185.00",
 
     }, {
-      "image_url": "https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image_url": "https://images.pexels.com/photos/920382/pexels-photo-920382.jpeg",
       "title": "רטסמס הקיטמתמ תניכמ",
       "subtitle": "ןושאר",
       "lectureure": "ןהכ זרא",
@@ -96,7 +96,7 @@ function Course_Main() {
       "price": "185.00",
 
     }, {
-      "image_url": "https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image_url": "https://images.pexels.com/photos/838413/pexels-photo-838413.jpeg",
       "title": "רטסמס הקיטמתמ תניכמ",
       "subtitle": "ןושאר",
       "lectureure": "ןהכ זרא",
@@ -105,7 +105,7 @@ function Course_Main() {
       "price": "185.00",
 
     }, {
-      "image_url": "https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image_url": "https://images.pexels.com/photos/4623357/pexels-photo-4623357.jpeg",
       "title": "רטסמס הקיטמתמ תניכמ",
       "subtitle": "ןושאר",
       "lectureure": "ןהכ זרא",
@@ -114,7 +114,7 @@ function Course_Main() {
       "price": "185.00",
 
     }, {
-      "image_url": "https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image_url": "https://images.pexels.com/photos/6517343/pexels-photo-6517343.jpeg",
       "title": "רטסמס הקיטמתמ תניכמ",
       "subtitle": "ןושאר",
       "lectureure": "ןהכ זרא",
@@ -124,7 +124,7 @@ function Course_Main() {
 
     }, 
     {
-      "image_url": "https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image_url": "https://images.pexels.com/photos/6281877/pexels-photo-6281877.jpeg",
       "title": "רטסמס הקיטמתמ תניכמ",
       "subtitle": "ןושאר",
       "lectureure": "ןהכ זרא",
@@ -134,7 +134,7 @@ function Course_Main() {
 
     },
     {
-      "image_url": "https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image_url": "https://images.pexels.com/photos/5553045/pexels-photo-5553045.jpeg",
       "title": "רטסמס הקיטמתמ תניכמ",
       "subtitle": "ןושאר",
       "lectureure": "ןהכ זרא",
@@ -144,7 +144,7 @@ function Course_Main() {
 
     }, 
     {
-      "image_url": "https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image_url": "https://images.pexels.com/photos/5905748/pexels-photo-5905748.jpeg",
       "title": "רטסמס הקיטמתמ תניכמ",
       "subtitle": "ןושאר",
       "lectureure": "ןהכ זרא",
@@ -180,7 +180,7 @@ function Course_Main() {
           <h3 className={styles.text}>םיאלמ םיסרוק</h3>
         </div>
         {/* <Card /> */}
-        <CustomSwiper data={result_data} />
+        <CustomSwiper data={result_data.sort(function(){return 0.5 - Math.random()})} />
 
 
       </article>
@@ -191,7 +191,7 @@ function Course_Main() {
           <p className={styles.seeall}> ←  דוע האר</p>
           <h3 className={styles.text}>םיאלמ םיסרוק</h3>
         </div>
-        <CustomSwiper data={result_data} />
+        <CustomSwiper data={result_data.reverse()} />
 
       </article>
 
@@ -205,7 +205,7 @@ function Course_Main() {
           <h3 className={styles.text}>םיאלמ םיסרוק</h3>
         </div>
 
-        <CustomSwiper data={result_data} />
+        <CustomSwiper data={result_data.sort(function(){return 0.3 - Math.random()})} />
 
       </article>
 
