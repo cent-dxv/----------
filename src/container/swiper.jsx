@@ -44,7 +44,7 @@ export default ({ data }) => {
   };
 
 
-  const preview = width > 769 ? 4 : width >= 551 ? 3 : 481 < width ? 2 : 1
+  const preview = width > 980 ? 4 : width >= 780 ? 3 : 481 < width ? 2 : 1
 
   return (
     <div>

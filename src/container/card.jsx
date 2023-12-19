@@ -7,7 +7,7 @@ function Card({ items_data }) {
 
 
   
-  console.log("\n" * 30, " =>>>", items_data?.title, "\n", items_data)
+  // console.log("\n" * 30, " =>>>", items_data?.title, "\n", items_data)
   return (
     <div className={styles.card}>
       <div className={styles.card_image} >

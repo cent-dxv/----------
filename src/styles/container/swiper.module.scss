@@ -53,11 +53,11 @@
   /* Your styles for this media query */
   .button_prev {
     @include navigation_button();
-    left: -30px !important;
+    left: -46px !important;
   }
   .button_next {
     @include navigation_button();
-    right: -30px !important;
+    right: -44px !important;
   }
 }
 
