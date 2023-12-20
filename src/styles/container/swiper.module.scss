@@ -33,8 +33,11 @@
     top: 45%;
     @include navigation_button();
     left: -80px;
-    @media (max-width: 1024px) {
+    @media (max-width: 950px) {
       display: none;
+    }
+    @media (max-width: 1080px) {
+      right: -66px;
     }
   }
 
@@ -43,21 +46,25 @@
     top: 45%;
     @include navigation_button();
     right: -80px;
-    @media (max-width: 1024px) {
+
+    @media (max-width: 1080px) {
+      right: -66px;
+    }
+    @media (max-width: 950px) {
       display: none;
     }
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1244px) {
   /* Your styles for this media query */
   .button_prev {
-    @include navigation_button();
-    left: -46px !important;
+    // @include navigation_button();
+    left: -46px ;
   }
   .button_next {
-    @include navigation_button();
-    right: -44px !important;
+    // @include navigation_button();
+    right: -46px ;
   }
 }
 
