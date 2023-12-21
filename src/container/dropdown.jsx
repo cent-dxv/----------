@@ -8,7 +8,7 @@ import styles from '@/styles/container/drop.module.scss';
 
 const Dropdown = ({ children, content, arrow }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [position, setPosition] = useState({ top: 35, left: -300 });
+  const [position, setPosition] = useState({ top: 35, left: -150 });
   const triggerRef = useRef(null);
 
   const handleMouseEnter = () => {

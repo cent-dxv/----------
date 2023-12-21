@@ -103,7 +103,7 @@ function Navbar() {
             (<>
 
               <Dropdown
-                arrow="80%"
+                arrow="47%"
                 content={
                   <div className={`${style_navbar.dropdown}`}>
                     <div>
@@ -164,7 +164,7 @@ function Navbar() {
 
               <Dropdown
                 className={`${style_navbar.dropdown}`}
-                arrow="80%"
+                arrow="43%"
                 content={
                   <div className={`${style_navbar.dropdown}`}>
                     <div>
@@ -224,7 +224,7 @@ function Navbar() {
 
 
               <Dropdown
-                arrow="90%"
+                arrow="55%"
                 content={
                   <div className={`${style_navbar.dropdown}`}>
                     <div>
