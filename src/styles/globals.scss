@@ -25,4 +25,15 @@ main {
     margin: 0 50px;
 
   }
+
+  @media (max-width: 950px) {
+    margin: 0 50px;
+
+  }
+
+
+  @media (max-width: 600px) and (min-width: 500px) {
+    margin: 0 5px;
+
+  }
 }

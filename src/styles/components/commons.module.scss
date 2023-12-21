@@ -1,5 +1,10 @@
 .header {
   text-align: end;
+  @media (max-width: 500px) {
+    width: 320px;
+    margin: auto;
+    margin-bottom: 25px;
+  }
   .h1 {
     color: #1c2135;
     text-align: right;
@@ -10,7 +15,8 @@
     margin-top: 20px;
     margin-bottom: 5px;
 
-    @media (max-width: 480px) {
+    @media (max-width: 500px) {
+      width:320px;
       text-align: right;
       font-size: 60.706px !important;
       font-style: normal;
@@ -41,9 +47,9 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 480px) {
-
-    width: 360px;
+  @media (max-width: 500px) {
+    width: 320px;
+    margin: auto;
   }
   .text {
     // display: none;
@@ -54,13 +60,13 @@
     font-style: normal;
     font-weight: 500;
     line-height: 40px; /* 100% */
-    @media (max-width: 480px) {
+    @media (max-width: 500px) {
       color: #1c2135;
       text-align: right;
-      font-size: 23.033px;
+      font-size: 22px;
       font-style: normal;
       font-weight: 500;
-      line-height: 31.891px; /* 138.462% */
+      // line-height: 31.891px; /* 138.462% */
     }
   }
   .seeall {
@@ -72,15 +78,14 @@
     font-weight: 500;
     line-height: 40px;
 
-    @media (max-width: 480px) {
+    @media (max-width: 500px) {
       color: #6f7e8f;
       text-align: right;
       font-size: 18px;
       font-style: normal;
       font-weight: 500;
       line-height: 40px; /* 222.222% */
-
-
+      margin-left:0;
     } /* 222.222% */
   }
 }
