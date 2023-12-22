@@ -31,6 +31,10 @@
     // background: yellow;
     position: absolute;
     top: 45%;
+
+    @media (min-width: 1080px)  and (max-width: 1250px){
+      display: none;
+       }
     @include navigation_button();
     left: -80px;
     @media (max-width: 950px) {
@@ -46,6 +50,10 @@
     top: 45%;
     @include navigation_button();
     right: -80px;
+
+    @media (min-width: 1080px)  and (max-width: 1250px){
+   display: none;
+    }
 
     @media (max-width: 1080px) {
       right: -66px;
