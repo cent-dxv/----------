@@ -168,7 +168,7 @@ function Course_Main() {
 
 
   return (
-    <div>
+    <div className={styles.main}>
 
       <div className={styles.background}>
 
