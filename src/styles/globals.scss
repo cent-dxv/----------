@@ -8,36 +8,4 @@ html,
 body {
   background: #fff;
 }
-main {
-  margin-left: 150px;
-  margin-right: 150px;
 
-  @media (max-width: 1244px) {
-    margin-left: 50px;
-    margin-right: 50px;
-    max-width: 1500px;
-    margin: auto;
-  }
-
-  @media (max-width: 1080px) {
-    margin: 0 100px;
-  }
-
-  @media (max-width: 950px) {
-    margin: 0 50px;
-
-  }
-
-  @media (max-width: 950px) {
-    margin: 0 50px;
-
-  }
-
-
-  @media (max-width: 600px) and (min-width: 500px) {
-    margin: 0 5px;
-
-  }
-
-
-}
