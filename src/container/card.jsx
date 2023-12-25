@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from '@/styles/container/card.module.scss'
 import Image from 'next/image'
+import Link from 'next/link';
+
 
 function Card({ items_data }) {
 
@@ -9,7 +11,10 @@ function Card({ items_data }) {
 
   // console.log("\n" * 30, " =>>>", items_data?.title, "\n", items_data)
   return (
-    <div className={styles.card}>
+    <Link style={{textDecoration:"none"}} href={`/course/${items_data.id}`} as={`/course/${items_data.id}`}>
+
+
+       <div className={styles.card}>
       <div className={styles.card_image} >
         <div className={styles.like_icon}>
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
@@ -55,6 +60,8 @@ function Card({ items_data }) {
         </div>
       </div>
     </div>
+    </Link>
+   
   )
 }
 

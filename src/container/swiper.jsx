@@ -103,7 +103,7 @@ export default ({ data }) => {
 
             {data.map((items) => {
               // console.log(items)
-              return (  <SwiperSlide> <Link style={{textDecoration:"none"}} href={`/course/${items.id}`} as={`/course/${items.id}`}><Card items_data={items} /></Link> </SwiperSlide> )
+              return (  <SwiperSlide> <Card items_data={items} /></SwiperSlide> )
             })}
 
           </Swiper>)
