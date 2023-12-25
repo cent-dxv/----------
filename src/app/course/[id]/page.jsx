@@ -6,15 +6,20 @@ import Image from 'next/image'
 import Aside from './aside';
 import Course_dropdown from './components/course_dropdw';
 
-
+import result_data from "../../../../mok_data.js"
 
 import { Progress } from 'antd';
 
 
-const CourseDetailPage = () => {
+const CourseDetailPage = ({ params }) => {
 
 
-  const [open_Dropdown, setDropdown] = useState(true);
+  const data = result_data.filter((e) => e.id == params.id)[0];
+
+  console.log(data ,params  ,  params.id );
+
+
+  const [open_Dropdown, setDropdown] = useState(false);
   return (
     <>
 
@@ -25,7 +30,7 @@ const CourseDetailPage = () => {
         <Aside />
 
         <div className={styles.course_details}>
-          <h1 className={styles.title}>  MOK | מכינת מתמטיקה - סמסטר ראשון</h1>
+          <h1 className={styles.title}>   {data ? data.title  :  "MOK | מכינת מתמטיקה - סמסטר ראשון"}  </h1>
 
           <div className={styles.rate}>
             <span>
@@ -89,7 +94,7 @@ const CourseDetailPage = () => {
             <Image
               fill
               objectFit='cover'
-              src="/images/video.png"
+              src= {data ? data.image_url  :  "/images/video.png"}
             />
 
             <span className={styles.play_icon}><svg xmlns="http://www.w3.org/2000/svg" width="90" height="84" viewBox="0 0 90 84" fill="none">
@@ -101,11 +106,11 @@ const CourseDetailPage = () => {
           <div className={styles.course_content}>
             <div className={styles.course_content_nav} >
 
-              <div onClick={()=>{ setDropdown(!open_Dropdown) ; console.log( "===> " , open_Dropdown) }}>
+              <div onClick={() => { setDropdown(!open_Dropdown); console.log("===> ", open_Dropdown) }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2196 6.61714C13.5191 6.5759 13.75 6.31535 13.75 6.00008C13.75 5.65615 13.4753 5.37734 13.1364 5.37734L2.35005 5.37734L6.24648 1.43899L6.30604 1.36927C6.48478 1.12586 6.46568 0.779852 6.24828 0.558309C6.00913 0.314611 5.6206 0.313795 5.38047 0.556486L0.439206 5.55033C0.409774 5.57894 0.383145 5.6105 0.35978 5.64454C0.192525 5.88772 0.216102 6.22506 0.430501 6.44171L5.3805 11.4436L5.44945 11.5037C5.69006 11.6841 6.03093 11.6632 6.24831 11.4417C6.48744 11.1979 6.4866 10.8036 6.24644 10.561L2.34908 6.62282L13.1364 6.62282L13.2196 6.61714Z" fill="#200E32" />
                 </svg>
-                <p>    { open_Dropdown ? "לכווץ את כל הנושאים" : "  הרחבת כל הנושאים "} </p>
+                <p>    {open_Dropdown ? "לכווץ את כל הנושאים" : "  הרחבת כל הנושאים "} </p>
               </div>
 
               <div>
@@ -117,10 +122,10 @@ const CourseDetailPage = () => {
             </div>
 
 
-            <Course_dropdown open ={open_Dropdown} />
-            <Course_dropdown open ={open_Dropdown}/>
-            <Course_dropdown open ={open_Dropdown}/>
-            <Course_dropdown open ={open_Dropdown}/>
+            <Course_dropdown open={open_Dropdown} />
+            <Course_dropdown open={open_Dropdown} />
+            <Course_dropdown open={open_Dropdown} />
+            <Course_dropdown open={open_Dropdown} />
           </div>
           <div className={styles.descriptions}>
             <h3>  ?למי הקורס מיועד  </h3>

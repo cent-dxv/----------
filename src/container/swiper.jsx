@@ -7,6 +7,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from '@/styles/container/swiper.module.scss'
 import Image from "next/image"
 
+import Link from 'next/link';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -97,9 +99,11 @@ export default ({ data }) => {
             ref={swiperRef1}
           >
 
+{/* <Link href="/course/[id]" as={`/course/${id}`}></Link> */}
+
             {data.map((items) => {
               // console.log(items)
-              return (<SwiperSlide> <Card items_data={items} /> </SwiperSlide>)
+              return (  <SwiperSlide> <Link href={`/course/${items.id}`} as={`/course/${items.id}`}><Card items_data={items} /></Link> </SwiperSlide> )
             })}
 
           </Swiper>)

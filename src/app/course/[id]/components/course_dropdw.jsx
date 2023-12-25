@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react'
 import styles from '@/styles/components/course_detail_page.module.scss'
 
 
-
 function Course_dropdown({open}) {
   const [open_Dropdown, setDropdown] = useState(false);
 
