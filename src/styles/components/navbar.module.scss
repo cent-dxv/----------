@@ -168,3 +168,31 @@
     }
   }
 }
+
+.heart_cart_icon{
+  display: flex;
+  align-items: center; 
+
+  div:first-child{
+    padding: 9px 30px;
+    border-radius: 16px;
+    border: 1.5px solid #B3BAC3;
+    margin-right: 10px;
+  }
+
+  div:nth-child(2){
+    padding: 9px 30px;
+    border-radius: 16px;
+    background: #32374D;
+    color: #FFF;
+    margin-right:20px ;
+  }
+  // margin-left: -200px;
+  svg{
+    margin-left: 10px;
+    width: 18;
+    height: 18px;
+    
+  }
+
+}

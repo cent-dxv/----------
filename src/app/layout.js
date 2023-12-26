@@ -24,13 +24,13 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  return (
+  return (      
     <html lang="en">
       <head>
         <link rel="icon" type="image/png" href="path-to-your-favicon" />
       </head>
       <body className={`${inter.className} ${Heebos.className}`}> 
-      <Navbar />  
+      
       <main> {children} </main>
       {/* <Footer/> */}
       </body>
