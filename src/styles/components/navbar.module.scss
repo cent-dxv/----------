@@ -173,6 +173,11 @@
   display: flex;
   align-items: center; 
 
+  @media (max-width : 920px) {
+    display: none;
+    
+  }
+
   div:first-child{
     padding: 9px 30px;
     border-radius: 16px;
