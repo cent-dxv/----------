@@ -95,11 +95,9 @@
 }
 
 .background {
-
-     @media (max-width: 800px)    {
-      display: none;
-      
-    }
+  @media (max-width: 800px) {
+    display: none;
+  }
   .line {
     position: absolute;
     border: 6px;
@@ -108,30 +106,23 @@
     width: 330px;
     height: 872px;
 
-    @media (max-width: 1000px)    {
+    @media (max-width: 1000px) {
       top: 351px;
       width: 300px;
       height: 852px;
-      
     }
 
-    @media (min-width: 1080px)  and (max-width: 1250px){
-
-      top:442px;
+    @media (min-width: 1080px) and (max-width: 1250px) {
+      top: 442px;
       width: 230px;
       height: 772px;
     }
-    @media (min-width: 1250px)  and (max-width: 1400px){
-
-      top:442px;
+    @media (min-width: 1250px) and (max-width: 1400px) {
+      top: 442px;
       width: 230px;
       height: 772px;
-      
     }
-
   }
-
- 
 
   .dot_background_1 {
     position: absolute;
@@ -165,75 +156,56 @@
 }
 
 .red_line {
-    position: absolute;
-    width: 446px;
-    height: 462px;
-    bottom: -223px;
-    left: -98px;
+  position: absolute;
+  width: 446px;
+  height: 462px;
+  bottom: -223px;
+  left: -98px;
 
-    // @media  (max-width: 1675px) {
-    //   width: 646px;
-    //   height: 662px;
-      
-    // }
-    
+  // @media  (max-width: 1675px) {
+  //   width: 646px;
+  //   height: 662px;
 
-    
-    
-    @media (max-width: 800px)    {
-      display: none;
-      
-    }
+  // }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.main {
+  // margin-left: 150px;
+  // margin-right: 150px;
+  @media (min-width: 1244px) {
+    max-width: 1200px;
+    margin: auto;
   }
 
 
-  .main {
-    // margin-left: 150px;
-    // margin-right: 150px;
-    @media (min-width:1244px){
 
-      
-      max-width: 1200px;
-      margin: auto ;
-    }
-    
-  
+  @media (max-width: 1200px) {
+    max-width: 1100px;
+    margin: auto;
 
-    // @media (max-width: 1200px) {
-
-    //   margin: 0 5%;
-    // }
-
-    @media (max-width: 1200px) {
-      max-width: 1100px;
-      margin: auto ;
- 
-      // margin: 0 1%;
-    }
-  
-    // @media (max-width: 1080px) {
-    //   margin: 0 100px;
-    // }
-
-    @media (max-width: 1150px) {
-      max-width: 95%;
-      margin: auto;
-  
-    }
-  
-    @media (max-width: 1080px) {
-      max-width: 850px;
-      margin: auto;
-  
-    }
-  
- 
-  
-  
-    @media (max-width: 600px) and (min-width: 500px) {
-      margin: 0 5px;
-  
-    }
-  
-  
   }
+
+
+  @media (max-width: 1150px) {
+    max-width: 95%;
+    margin: auto;
+  }
+
+  @media (max-width: 1080px) {
+    max-width: 850px;
+    margin: auto;
+  }
+
+  @media (max-width: 799px) and (min-width: 600px) {
+    max-width: 590px;
+    margin:auto;
+  }
+
+  @media (max-width: 600px) and (min-width: 500px) {
+    margin: 0 5px;
+  }
+}
