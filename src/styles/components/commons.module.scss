@@ -188,36 +188,46 @@
 
 
   .main {
-    margin-left: 150px;
-    margin-right: 150px;
+    // margin-left: 150px;
+    // margin-right: 150px;
     @media (min-width:1244px){
 
       
-      max-width: 1400px;
-      margin: auto !important;
+      max-width: 1200px;
+      margin: auto ;
     }
     
   
-    @media (max-width: 1244px) {
-      margin-left: 50px;
-      margin-right: 50px;
-      max-width: 1500px;
+
+    // @media (max-width: 1200px) {
+
+    //   margin: 0 5%;
+    // }
+
+    @media (max-width: 1200px) {
+      max-width: 1100px;
+      margin: auto ;
+ 
+      // margin: 0 1%;
+    }
+  
+    // @media (max-width: 1080px) {
+    //   margin: 0 100px;
+    // }
+
+    @media (max-width: 1150px) {
+      max-width: 95%;
       margin: auto;
+  
     }
   
     @media (max-width: 1080px) {
-      margin: 0 100px;
-    }
-  
-    @media (max-width: 950px) {
-      margin: 0 50px;
+      max-width: 850px;
+      margin: auto;
   
     }
   
-    @media (max-width: 950px) {
-      margin: 0 50px;
-  
-    }
+ 
   
   
     @media (max-width: 600px) and (min-width: 500px) {

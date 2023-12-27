@@ -1,4 +1,4 @@
-@mixin navigation_button {
+@mixin navigation_button ($direction) {
   // background: yellow;
 
   z-index: 10;
@@ -8,6 +8,20 @@
   box-shadow: 0px 0px 30px 5px #e6ebf0;
   width: 40px;
   height: 40px;
+  position: absolute;
+  top: 45%;
+  display: none;
+
+  @media (min-width: 900px)  and (max-width: 1080px){
+    display: block;
+    #{$direction} : -40px;
+  }
+
+  @media (min-width: 1200px)  {
+    display: block;
+    #{$direction} : -40px;
+  }
+
   img {
     position: absolute;
     top: 50%;
@@ -29,38 +43,14 @@
   width: 100%;
   .button_prev {
     // background: yellow;
-    position: absolute;
-    top: 45%;
 
-    @media (min-width: 1080px)  and (max-width: 1250px){
-      display: none;
-       }
-    @include navigation_button();
-    left: -80px;
-    @media (max-width: 950px) {
-      display: none;
-    }
-    @media (max-width: 1080px) {
-      right: -66px;
-    }
+    @include navigation_button('left');
+
   }
 
   .button_next {
-    position: absolute;
-    top: 45%;
-    @include navigation_button();
-    right: -80px;
+    @include navigation_button('right');
 
-    @media (min-width: 1080px)  and (max-width: 1250px){
-   display: none;
-    }
-
-    @media (max-width: 1080px) {
-      right: -66px;
-    }
-    @media (max-width: 950px) {
-      display: none;
-    }
   }
 }
 
