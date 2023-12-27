@@ -75,34 +75,34 @@ function Footer() {
         </h1>
 
         <div className={styles.contact}>
-          <span className={styles.contact_dart}>
+          <button className={styles.contact_dart}>
             חלש
-          </span>
+          </button>
 
-          <span  className={styles.profile}>
+          <button  className={styles.profile}>
             ןופלט
             <Image
               width={15}
               height={15}
               src="/icons/contact_call.svg"
             />
-          </span>
-          <span>
+          </button>
+          <button>
             ל”אוד
             <Image
               width={15}
               height={15}
               src="/icons/contact_email.svg"
             />
-          </span>
-          <span>
+          </button>
+          <button>
             אלמ םש
             <Image
               width={15}
               height={15}
               src="/icons/contact_profile.svg"
             />
-          </span>
+          </button>
 
 
         </div>

@@ -156,12 +156,13 @@
     }
 
     // margin: 20px ;
-    span {
+    button {
       display: flex;
       align-items: center;
       margin: 30px 10px;
       // padding
       justify-content: end;
+      border: none;
 
       width: 200px;
 

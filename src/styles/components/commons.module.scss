@@ -77,6 +77,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
+    position: relative;
+    z-index: 20;
+    border: none;
+    background: unset;
 
     @media (max-width: 500px) {
       color: #6f7e8f;
@@ -186,6 +190,13 @@
   .main {
     margin-left: 150px;
     margin-right: 150px;
+    @media (min-width:1244px){
+
+      
+      max-width: 1400px;
+      margin: auto !important;
+    }
+    
   
     @media (max-width: 1244px) {
       margin-left: 50px;

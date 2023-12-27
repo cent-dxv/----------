@@ -97,6 +97,8 @@ export default ({ data }) => {
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log('slide change')}
             ref={swiperRef1}
+          
+            
           >
 
 {/* <Link href="/course/[id]" as={`/course/${id}`}></Link> */}

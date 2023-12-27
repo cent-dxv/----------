@@ -76,7 +76,7 @@ function Course_Main() {
 
       <article>
         <div className={styles.title}>
-          <p className={styles.seeall}> ← דוע האר</p>
+          <button className={styles.seeall}> ← דוע האר</button>
           <h3 className={styles.text}>םיאלמ םיסרוק</h3>
         </div>
         {/* <Card /> */}
