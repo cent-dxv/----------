@@ -156,9 +156,11 @@
     }
 
     // margin: 20px ;
+
+    span,
     button {
       display: flex;
-      justify-content: center;
+      justify-content: end;
       align-items: center;
       margin: 30px 10px;
       // padding
@@ -169,7 +171,6 @@
 
       border-radius: 16px;
       background: #fff;
-      padding: 10px 40px;
       z-index: 10;
 
       color: #8b5609;
@@ -178,29 +179,57 @@
       font-style: normal;
       font-weight: 500;
       text-transform: uppercase;
+      position: relative;
+
+      svg {
+        // background: #ff0707;
+        margin: 0 5px;
+        // fill: red;
+
+        position: absolute;
+        top: 50%;
+        right: 10px; /* Adjust the left spacing as needed */
+        transform: translateY(-50%);
+      }
+      input {
+        padding: 15px 40px 15px 0px;
+
+        border-radius: 16px;
+
+        width: 100%;
+        height: 100%;
+        text-align: end;
+        border: none;
+      }
 
       @media (max-width: 1200px) {
-        width: 150px;
-        padding: 10px 20px;
+        width: 200px;
+        input {
+          padding: 15px 40px 15px 0px;
+        }
       }
-      @media (max-width: 768px) {
-        margin: 10px 10px;
-        padding: 5px 10px;
+      @media (max-width: 930px) {
+        // margin: 10px 10px;
+        width: 160px;
+        input {
+          padding: 15px 40px 15px 0px;
+        }
       }
       @media (max-width: 480px) {
         // width: 250px;
-        padding: 10px 15px;
-      }
+        margin: 10px;
+        // padding: 10px;
+        width: 33%;
 
-      img {
-        // background: #ff0707;
-        margin: 0 5px;
-        fill: red;
+        input {
+          padding: 15px 40px 15px 0px;
+        }
       }
     }
-    .contact_dart {
+    .contact_dart,.contact_dart_mobile {
       background: #060c44;
       color: #fff;
+      justify-content: center;
       text-align: center;
       font-size: 16px;
       font-style: normal;
@@ -208,10 +237,21 @@
       line-height: 32px;
 
       @media (max-width: 480px) {
-        width: 70%;
+        display: none;
         // padding: 10px 15px;
       }
     }
+
+    .contact_dart_mobile{
+      display: none;
+      @media (max-width: 480px) {
+        display: block;
+        padding: 10px;
+        width: 70%;
+      }
+    }
+
+
     @media (max-width: 480px) {
       .profile {
         width: 70%;
@@ -361,16 +401,15 @@
   }
 }
 
-
 .white_layer_2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30px ;
+  margin-top: 30px;
   padding-top: 30px;
-  background: #1C2135;
-  color: #FFF;
+  background: #1c2135;
+  color: #fff;
 
   .drop_down_triger {
     display: none;
@@ -456,7 +495,7 @@
       text-align: end;
       margin: 10px 30px;
       h1 {
-        color: #FFF;
+        color: #fff;
         text-align: right;
         font-size: 22px;
         font-style: normal;
@@ -483,8 +522,8 @@
 
   .root {
     border-top: 1px solid #f4f4f4;
-    background: #1C2135;
-    color: #FFF;
+    background: #1c2135;
+    color: #fff;
 
     text-align: left;
     font-size: 14px;
@@ -504,8 +543,8 @@
       width: 100%;
       border: none;
 
-      p{
-        margin:0 40px ;
+      p {
+        margin: 0 40px;
       }
     }
   }
