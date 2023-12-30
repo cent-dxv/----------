@@ -30,6 +30,20 @@
   }
 }
 
+.mobile {
+  display: none;
+}
+@media (max-width: 1080px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+}
+
 .aside {
   display: flex;
   flex-direction: column;
@@ -39,20 +53,21 @@
   padding: 30px;
 
   width: 368px;
-  height: 660px;
+  height: 650px;
 
   border-radius: 16px;
   background: #fff;
   box-shadow: 0px 0px 40px 0px #dee8f1;
 
-  @media (max-width: 1080px) and (min-width: 650px) {
-    width: 550px;
-    margin-top: 40px;
-    // height: 600px;
-  }
-  @media (max-width: 650px) {
-    width: 100%;
-    margin: 0 40px;
+  // @media (max-width: 1080px) and (min-width: 650px) {
+  //   width: 550px;
+  //   margin-top: 40px;
+  //   // height: 600px;
+  // }
+  @media (max-width: 480px) {
+    width: 100% !important;
+    // margin: 0 40px;
+    // margin: 10px;
   }
 
   // display: none;
@@ -63,9 +78,9 @@
     font-style: normal;
     font-weight: 700;
     // line-height: 36px; /* 120% */
-    @media (max-width: 1150px) {
-      font-size: 25px;
-    }
+    // @media (max-width: 1150px) {
+    //   font-size: 25px;
+    // }
   }
 
   .action_btn {
@@ -140,11 +155,18 @@
     margin-top: 30px;
   }
   h3 {
+
     color: #000;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    margin: 10px 0;
+    line-height: 18px; /* 100% */
+
+    // color: #000;
+    // font-size: 18px;
+    // font-style: normal;
+    // font-weight: 500;
+    // margin: 10px 0;
   }
   .description {
     margin-top: 20px;
@@ -154,9 +176,10 @@
     font-style: normal;
     font-weight: 400;
     width: 100%;
-    // line-height: 30px;
+    // line-height: 18px; 
+    line-height: 30px;
     @media (max-width: 1150px) {
-      font-size: 14px;
+      font-size: 15px;
     }
   }
 
@@ -263,16 +286,14 @@
     justify-content: space-between;
     margin: 20px 0 25px 0;
     // margin: 0 10px;
-    @media (max-width: 650px) {   
-
+    @media (max-width: 650px) {
       margin: 20px 10px 25px 10px;
     }
-
 
     .share_tab {
       display: flex;
 
-      @media (max-width: 650px) {        
+      @media (max-width: 650px) {
         // padding: 40px;
         p {
           display: none;

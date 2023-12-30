@@ -26,8 +26,7 @@ const CourseDetailPage = ({ params }) => {
 
       <div className={styles.main}>
 
-
-        <Aside />
+      <div className={styles.desktop}> <Aside /> </div>
 
         <div className={styles.course_details}>
           <h1 className={styles.title}>   {data ? data.title : "MOK | מכינת מתמטיקה - סמסטר ראשון"}  </h1>
@@ -146,6 +145,7 @@ const CourseDetailPage = ({ params }) => {
           </div>
 
 
+          <div className={styles.mobile}> <Aside /> </div>
 
 
 
