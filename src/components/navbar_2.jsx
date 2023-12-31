@@ -28,13 +28,13 @@ function Navbar() {
 
           <div className={style_navbar.heart_cart_icon}>
 
-            <div>
+            <button>
               תורבחתה
-            </div>
+            </button>
 
-            <div>
+            <button>
               הרשמה
-            </div>
+            </button>
 
             <Image
               className={`${style_navbar.jhkh}`}
