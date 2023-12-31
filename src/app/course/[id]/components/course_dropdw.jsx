@@ -14,7 +14,7 @@ function Course_dropdown({open}) {
   
 
   return (
-    <div className={`${styles.dropdown__container} `}
+    <button className={`${styles.dropdown__container} `}
     onClick={() => { setDropdown(!open_Dropdown ) }}
   >
 
@@ -59,7 +59,7 @@ function Course_dropdown({open}) {
 
 
 
-  </div>
+  </button>
   )
 }
 

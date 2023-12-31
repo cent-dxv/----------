@@ -2,6 +2,8 @@
   margin: 70px 50px;
   display: flex;
   justify-content: center;
+  
+  
 
   @media (max-width: 1080px) {
     flex-direction: column-reverse;
@@ -90,6 +92,7 @@
   .action_btn {
     width: 100%;
     display: flex;
+    align-items: center;
 
     padding: 16px;
     border-radius: 8px;
@@ -100,6 +103,8 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
+    cursor: pointer;
+    
     p {
       margin: auto;
     }
@@ -441,7 +446,7 @@
       justify-content: space-between;
       align-items: center;
 
-      div:first-child {
+      button:first-child {
         padding: 15px;
         background: #f3f3fb;
         border-radius: 10px;
@@ -643,10 +648,12 @@
     // padding: 40px;
     padding: 40px 15px;
     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-height: 1450px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    padding-bottom: 100px;
   }
 
   h1 {
@@ -860,9 +867,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 18px; /* 100% */
-    @media (max-width: 650px) {
-      width: 100%;
-    }
+
 
     svg {
       margin-right: 10px;

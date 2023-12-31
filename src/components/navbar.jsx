@@ -70,14 +70,14 @@ function Navbar() {
 
             </div>
 
-            <p className={`${style_navbar.logo}`}>
+            <Link  href="/" className={`${style_navbar.logo}`}>
               <Image
                 fill
                 src="/favicon.png"
                 objectFit='contain'
                 alt="Logo"
               />
-            </p>
+            </Link>
           </div>
         </section>
 
