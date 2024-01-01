@@ -2,6 +2,10 @@
 @use "sass:map";
 
 .nav {
+
+    z-index: 10;
+    position: relative;
+  
   @mixin nave_bar_txt($color, $margin) {
     color: map-get($font-color, $color);
     text-align: right;
@@ -64,6 +68,11 @@
     p {
       @include nave_bar_txt("white", 40px);
       height: max-content;
+      // display: flex;
+      // align-items: center;
+      svg{
+        margin-right: 10px;
+      }
     }
   }
 
