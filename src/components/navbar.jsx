@@ -90,8 +90,8 @@ function Navbar() {
 
           {width < 700 ?
             (
-              <div className={style_navbar.drop_down_triger} style={{ width: '100%', height: '100%' }} onClick={() => setDropdown(!open_Dropdown)}>
-                <div className={style_navbar.items}>
+              <div className={style_navbar.drop_down_triger} style={{ width: '100%', height: '100%' }} >
+                <div className={style_navbar.items} onClick={() => setDropdown(!open_Dropdown)}>
 
                   <Image
                     src='/icons/arrow-down-2.svg'
