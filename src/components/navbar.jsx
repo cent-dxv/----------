@@ -31,24 +31,33 @@ function Navbar() {
       <div>
         <section className={`${style_navbar.top_nav}`} >
 
-        <div className={style_navbar.EasyDropdown}>
+          <div className={style_navbar.EasyDropdown}>
             {/* this is where nav bar 2 will  .heart_cart_icon replaced for unautorized user*/}
             <EasyDropdown />
-            
 
-<Cart_Dropdown
-  arrow="47%">
 
-  <Image
-    // className={`${style_navbar.jhkh}`}
-    style={{ "margin-left": "260px" }}
-    width={30}
-    height={33}
-    src="/icons/cart.svg"
-    objectFit='contain'
-    alt="Logo"
-  />
-</Cart_Dropdown>
+            <div className={style_navbar.cart_icon} style={{marginLeft:"260px"}}>
+
+              <Cart_Dropdown
+                arrow="47%">
+
+                <Image
+                  // className={`${style_navbar.jhkh}`}
+                  style={{ "margin-left": "5px" }}
+                  width={30}
+                  height={33}
+                  src="/icons/cart.svg"
+                  objectFit='contain'
+                  alt="Logo"
+                />
+              </Cart_Dropdown>
+
+
+              {cartItems?.length != 0 && (<span className={style_navbar.cart_icon_num}>
+                {cartItems?.length}
+              </span>)}
+
+            </div>
           </div>
 
 
