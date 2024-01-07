@@ -1,7 +1,7 @@
 
 "use client"
 
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import style_navbar from '@/styles/components/navbar.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -11,6 +11,9 @@ import EasyDropdown from '../container/easydropdown'
 import Drawer_component from '../container/drawer'
 import Navigation_dropdown from '../container/navigation_dropdown'
 import WindowSize from '../utils/windowsize'
+import { CartContext } from '../app/contextApi'
+import Cart_Dropdown from '../container/cart_drop'
+
 
 // import navigation_dropdown from '../container/navigation_dropdown'
 
@@ -19,17 +22,36 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const [open_Dropdown, setDropdown] = useState(false);
 
+
   const { width, height } = WindowSize()
+  const { cartItems, addItemToCart, removeItemFromCart, clearCart } = useContext(CartContext);
 
   return (
     <nav className={`${style_navbar.nav}`}>
       <div>
         <section className={`${style_navbar.top_nav}`} >
-          <div className={style_navbar.EasyDropdown}>
+
+        <div className={style_navbar.EasyDropdown}>
             {/* this is where nav bar 2 will  .heart_cart_icon replaced for unautorized user*/}
             <EasyDropdown />
+            
 
+<Cart_Dropdown
+  arrow="47%">
+
+  <Image
+    // className={`${style_navbar.jhkh}`}
+    style={{ "margin-left": "260px" }}
+    width={30}
+    height={33}
+    src="/icons/cart.svg"
+    objectFit='contain'
+    alt="Logo"
+  />
+</Cart_Dropdown>
           </div>
+
+
 
 
 
@@ -45,8 +67,7 @@ function Navbar() {
             <Drawer_component open={open} setOpen={setOpen} />
 
 
-            <div style={{ display: 'flex' }}>
-
+            <div className={style_navbar.drawer_mobile}>
 
               <button className={`${style_navbar.drawer}`} onClick={() => setOpen(true)}>
                 <Image
@@ -54,22 +75,34 @@ function Navbar() {
                   height={41}
                   src="/icons/drawer.svg"
                   objectFit='contain'
-                  alt="drawer"
+                  alt="Logo"
                 />
               </button>
-              <Image
-                className={`${style_navbar.drawer}`}
-                style={{ "margin-left": "5px" }}
-                width={40}
-                height={40}
-                src="/icons/cart.svg"
-                objectFit='contain'
-                alt="cart"
-              />
+              <div className={style_navbar.cart_icon}>
+                <Cart_Dropdown
+                  arrow="47%">
+
+                  <Image
+                    // className={`${style_navbar.jhkh}`}
+                    style={{ "margin-left": "5px" }}
+                    width={30}
+                    height={33}
+                    src="/icons/cart.svg"
+                    objectFit='contain'
+                    alt="Logo"
+                  />
+                </Cart_Dropdown>
+
+                {cartItems?.length != 0 && (<span className={style_navbar.cart_icon_num}>
+                  {cartItems?.length}
+                </span>)}
+
+              </div>
+
+
 
 
             </div>
-
 
             <Link href="/" className={`${style_navbar.logo}`}>
               <Image
@@ -79,7 +112,6 @@ function Navbar() {
                 alt="Logo"
               />
             </Link>
-
 
 
           </div>
@@ -301,15 +333,6 @@ function Navbar() {
                   בגרויות במתמטיקה  </p>
               </Dropdown>
             </>)}
-
-
-
-
-
-
-
-
-
 
         </section>
       </div>
