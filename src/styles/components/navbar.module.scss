@@ -2,10 +2,9 @@
 @use "sass:map";
 
 .nav {
+  z-index: 25;
+  position: relative;
 
-    z-index: 10;
-    position: relative;
-  
   @mixin nave_bar_txt($color, $margin) {
     color: map-get($font-color, $color);
     text-align: right;
@@ -42,13 +41,11 @@
 
     a {
       @include nave_bar_txt(dark, 20px);
-      @media (max-width:830px) {
+      @media (max-width: 830px) {
         margin-left: 15px !important;
-        font-size: 14px !important
+        font-size: 14px !important;
       }
     }
-
-    
   }
 
   .bottom_nav {
@@ -70,7 +67,7 @@
       height: max-content;
       // display: flex;
       // align-items: center;
-      svg{
+      svg {
         margin-right: 10px;
       }
     }
@@ -112,7 +109,7 @@
     }
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     .EasyDropdown {
       display: none;
     }
@@ -125,11 +122,16 @@
   }
 }
 
-.drawer {
+.drawer_mobile {
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
+  .drawer_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .drawer {
     display: block;
     position: relative;
@@ -152,7 +154,7 @@
   }
 
   .dropdown {
-    display: none !important;
+    display: none;
   }
 
   .drop_down_triger {
@@ -178,35 +180,222 @@
   }
 }
 
-.heart_cart_icon{
+.cart_icon {
   display: flex;
-  align-items: center; 
+  position: relative;
+  padding: 10px  0  10px  10px;
 
-  @media (max-width : 920px) {
-    display: none;
-    
+  .cart_icon_num {
+    background: #FF5B37;
+    border: 50% solid;
+    width: 15px;
+    display: box;
+    display: block;
+    height: 15px;
+    font-size: 12px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: -7px;
+    top: 5px;
+    justify-content: center;
+    color: white;
+    z-index: 25;
+  }
+}
+.heart_cart_icon {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 920px) {
+    display: none !important;
   }
 
-  button:first-child{
+  button:first-child {
     padding: 9px 30px;
     border-radius: 16px;
-    border: 1.5px solid #B3BAC3;
+    border: 1.5px solid #b3bac3;
     margin-right: 10px;
   }
 
-  button:nth-child(2){
+  button:nth-child(2) {
     padding: 9px 30px;
     border-radius: 16px;
-    background: #32374D;
-    color: #FFF;
-    margin-right:20px ;
+    background: #32374d;
+    color: #fff;
+    margin-right: 20px;
   }
   // margin-left: -200px;
-  svg{
+  svg {
     margin-left: 10px;
     width: 18;
     height: 18px;
-    
+  }
+}
+
+.cart_dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 25;
+
+  .horizontal_divider {
+    width: 100%;
+    border-bottom: 1px solid #dee8f1;
+    margin: 15px 0;
   }
 
+  .CartContent {
+    border-radius: 20px;
+    background: #fff;
+    width: 300px;
+    max-height: calc(100vh - 60px);
+    overflow: scroll;
+    // height: 399px;
+    position: absolute;
+    display: block;
+    padding: 20px;
+    padding-top: 35px;
+    z-index: 25;
+    filter: drop-shadow(0px 0px 5px #dee8f1);
+    // z-index: 1;
+    @media (max-width: 480px) {
+      width: 380px;
+    }
+
+    .CartContent__nav {
+      display: flex;
+      justify-content: space-between;
+      text-align: end;
+      h1 {
+        color: #1c2135;
+        text-align: right;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px; /* 100% */
+      }
+      p {
+        color: #717171;
+        text-align: right;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px; /* 116.667% */
+      }
+      // align-items:;
+
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0;
+      svg {
+        width: 17px;
+        height: 17px;
+        margin: 2px 0;
+        @media (max-width: 480px) {
+          width: 20px;
+          height: 20px;
+          margin: 4px 0;
+        }
+      }
+      div {
+        display: flex;
+        text-align: end;
+        align-items: center;
+        span {
+          font-size: 12px;
+          color: #1c2135;
+          text-align: right;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 14px; /* 116.667% */
+          margin: 0 13px 0 10px;
+          @media (max-width: 480px) {
+            font-size: 16px;
+          }
+          p {
+            margin: 13px 0;
+            color: #1c9080;
+            text-align: right;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 14px; /* 100% */
+          }
+        }
+      }
+      .img {
+        position: relative;
+        width: 77px;
+        height: 60px;
+        @media (max-width: 480px) {
+          width: 94px;
+          height: 80px;
+        }
+
+        img {
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .price {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+
+      h1 {
+        color: #1c9080;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 500;
+        // line-height: 18px; /* 100% */
+        // letter-spacing: -0.72px;
+      }
+      h2 {
+        color: #1c2135;
+        // text-align: right;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        // line-height: 24px; /* 150% */
+      }
+    }
+  }
+
+  .action_btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    button {
+      padding: 13px 26px;
+      width: 100%;
+      margin: 0 5px;
+      border-radius: 8px;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      // line-height: 18px; /* 128.571% */
+      border: none;
+    }
+    button:nth-child(1) {
+      background: linear-gradient(279deg, #ff5b37 0%, #ff8267 100%);
+    }
+    button:nth-child(2) {
+      border-radius: 8px;
+      background: #1c2135;
+      display: block !important;
+    }
+  }
 }

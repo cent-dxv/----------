@@ -6,6 +6,7 @@ import { Inter } from 'next/font/google'
 import { Heebo } from 'next/font/google'
 import Navbar from '@/components/navbar'
 import Footer from '../components/footer'
+import { CartProvider } from './contextApi'
 
 
 
@@ -24,16 +25,18 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  return (      
-    <html lang="en">
-      <head>
-        <link rel="icon" type="image/png" href="path-to-your-favicon" />
-      </head>
-      <body className={`${inter.className} ${Heebos.className}`}> 
-      
-      <main> {children} </main>
-      {/* <Footer/> */}
-      </body>
-    </html>
+  return (
+    <CartProvider>
+      <html lang="en">
+        <head>
+          <link rel="icon" type="image/png" href="path-to-your-favicon" />
+        </head>
+        <body className={`${inter.className} ${Heebos.className}`}>
+
+          <main> {children} </main>
+          {/* <Footer/> */}
+        </body>
+      </html>
+    </CartProvider>
   )
 }

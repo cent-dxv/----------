@@ -71,15 +71,15 @@ function Navbar() {
             </div>
 
 
-              <Link href="/" className={`${style_navbar.logo}`}>
-                <Image
-                  fill
-                  src="/favicon.png"
-                  objectFit='contain'
-                  alt="Logo"
-                />
-              </Link>
-            
+            <Link href="/" className={`${style_navbar.logo}`}>
+              <Image
+                fill
+                src="/favicon.png"
+                objectFit='contain'
+                alt="Logo"
+              />
+            </Link>
+
 
 
           </div>
