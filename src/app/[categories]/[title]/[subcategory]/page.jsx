@@ -6,7 +6,7 @@ import Navbar from '@/components/navbar'
 import CustomSwiper from '@/src/container/swiper';
 
 
-import result_data from "../../../../mok_data"
+import result_data from "../../../../../mok_data"
 
 export default function Categories({ params }) {
   console.log( "\n" *5 , "===" *10 , decodeURIComponent(params.title)  , decodeURIComponent(params.categories),  "===" *10 , "\n" *5 ,  )
