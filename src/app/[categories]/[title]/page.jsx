@@ -9,6 +9,7 @@ import CustomSwiper from '@/src/container/swiper';
 import result_data from "../../../../mok_data"
 
 export default function Categories({ params }) {
+  console.log( "\n" *5 , "===" *10 , decodeURIComponent(params.title)  , decodeURIComponent(params.categories),  "===" *10 , "\n" *5 ,  )
   return (
     <>
       <div className={``}>
@@ -64,7 +65,7 @@ export default function Categories({ params }) {
           </div>
 
           <section className={styles.header}>
-            <h1 className={styles.h1}> {decodeURIComponent(params.title)}  </h1>
+            <h1 className={styles.h1}> {decodeURIComponent(params.categories)}  </h1>
             <h2 className={styles.h2}>   מכינת מתמטיקה </h2>
           </section>
 

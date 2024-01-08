@@ -94,7 +94,7 @@ export default ({ data }) => {
             modules={[Navigation, Scrollbar, A11y]}
             spaceBetween={10}
             slidesPerView={preview}
-            onSwiper={(swiper) => console.log(swiper)}
+            onSwiper={(swiper) => {}}
             onSlideChange={() => console.log('slide change')}
             ref={swiperRef1}
           

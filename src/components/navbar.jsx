@@ -18,7 +18,7 @@ import Cart_Dropdown from '../container/cart_drop'
 // import navigation_dropdown from '../container/navigation_dropdown'
 
 
-function Navbar({}) {
+function Navbar({ }) {
   const [open, setOpen] = useState(false);
   const [open_Dropdown, setDropdown] = useState(false);
 
@@ -170,68 +170,70 @@ function Navbar({}) {
             ) :
             (<>
 
-<Dropdown
+
+              <Dropdown
                 arrow="47%"
                 content={
                   <div className={`${style_navbar.dropdown}`}>
-                  <div>
-                    <Link href={"/categories/םייראלופופ םיסרוק"}>
-                      <h2>םייראלופופ םיסרוק
-                        <Image
-                          width={10}
-                          height={10}
-                          src="/icons/arrow-left.svg"
-                          style={{ marginLeft: "5px" }}
-                        />
-                      </h2>
-                    </Link>
-                    <p>ןושאר רטסמס - הקיטמתמ תניכמ</p>
-                    <p> ינש רטסמס - הקיטמתמ תניכמ</p>
-                    <p>ןוינכטל הלבק גוויס ןחבמל הנכה </p>
-                    <p> הניכמל הסינכ ןחבמל הנכה</p>
-                  </div>
-                  <div>
+                    <div>
+                      <Link href={"/קורסים פופולאריים/אקדמיה"}>
+                        <h2> קורסים פופולאריים
+                          <Image
+                            width={10}
+                            height={10}
+                            src="/icons/arrow-left.svg"
+                            style={{ marginLeft: "5px" }}
+                          />
+                        </h2>
+                      </Link>
+                      <p>מכינת מתמטיקה - סמסטר ראשון</p>
+                      <p>מכינת מתמטיקה - סמסטר שני</p>
+                      <p> הכנה למבחן סיווג קבלה לטכניון</p>
+                      <p>הכנה למבחן כניסה למכינה </p>
+                    </div>
+                    <div>
                       <h1> דכל מוסדות הלימוד </h1>
-                    <Link href={"/categories/ןוינכט"}>
-                  
-                    <h2>ןוינכט
+                      <Link href={"/טכניון/אקדמיה"}>
+                        <h2>
+                          טכניון
+                          <Image
+                            width={10}
+                            height={10}
+                            src="/icons/arrow-left.svg"
+                            style={{ marginLeft: "5px" }}
+                          />
+                        </h2>
+                      </Link>
+                      <p>אוניברסיטת חיפה</p>
+                      <p>המכללה האקדמית תל חי</p>
+                      <p>המכללה האקדמית אורט בראודה</p>
 
-                      <Image
-                        width={10}
-                        height={10}
-                        src="/icons/arrow-left.svg"
-                        style={{ marginLeft: "5px" }}
-                      />
-                    </h2>  </Link>
-                    <p>הפיח תטיסרבינוא</p>
-                    <p>יח לת תימדקאה הללכמה</p>
-                    <p>הדוארב טרוא תימדקאה הללכמה</p>
-                    <Link href={"/categories/דומיל םוחת"}>
-                      <h2>דומיל םוחת
-                        <Image
-                          width={10}
-                          height={10}
-                          src="/icons/arrow-left.svg"
-                          style={{ marginLeft: "5px" }}
-                        />
-                      </h2>
-                    </Link>
-                    <p>הקיסיפ </p>
-                    <Link href={"/categories/הקיטמתמ"}>
+                      <Link href={"/תחום לימוד/אקדמיה"}>
+                        <h2>  תחום לימוד
+                          <Image
+                            width={10}
+                            height={10}
+                            src="/icons/arrow-left.svg"
+                            style={{ marginLeft: "5px" }}
+                          />
+                        </h2>
+                      </Link>
+                      <p>פיסיקה </p>
+                      <Link href={"/מתמטיקה/אקדמיה"}>
 
-                      <h2> הקיטמתמ
-                        <Image
-                          width={10}
-                          height={10}
-                          src="/icons/arrow-left.svg"
-                          style={{ marginLeft: "5px" }}
-                        />
-                      </h2>
-                    </Link>
-                    <p> מכינות </p>
+                        <h2> מתמטיקה
+                          <Image
+                            width={10}
+                            height={10}
+                            src="/icons/arrow-left.svg"
+                            style={{ marginLeft: "5px" }}
+                          />
+                        </h2>
+                      </Link>
+                      <p> אנגלית </p>
 
+                    </div>
                   </div>
-                </div>
                 }>
                 <p>
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6" fill="none">
@@ -247,8 +249,8 @@ function Navbar({}) {
                 content={
                   <div className={`${style_navbar.dropdown}`}>
                     <div>
-                      <Link href={"/categories/םייראלופופ םיסרוק"}>
-                        <h2>םייראלופופ םיסרוק
+                      <Link href={"/קורסים פופולאריים/מכינות "}>
+                        <h2> קורסים פופולאריים
                           <Image
                             width={10}
                             height={10}
@@ -257,29 +259,16 @@ function Navbar({}) {
                           />
                         </h2>
                       </Link>
-                      <p>ןושאר רטסמס - הקיטמתמ תניכמ</p>
-                      <p> ינש רטסמס - הקיטמתמ תניכמ</p>
-                      <p>ןוינכטל הלבק גוויס ןחבמל הנכה </p>
-                      <p> הניכמל הסינכ ןחבמל הנכה</p>
+                      <p>מכינת מתמטיקה - סמסטר ראשון</p>
+                      <p>מכינת מתמטיקה - סמסטר שני</p>
+                      <p> הכנה למבחן סיווג קבלה לטכניון</p>
+                      <p>הכנה למבחן כניסה למכינה </p>
                     </div>
                     <div>
-                      <Link href={"/categories/דכל מוסדות הלימוד "}>
-                        <h1> דכל מוסדות הלימוד </h1>
-                      </Link>
-                      <h2>ןוינכט
-
-                        <Image
-                          width={10}
-                          height={10}
-                          src="/icons/arrow-left.svg"
-                          style={{ marginLeft: "5px" }}
-                        />
-                      </h2>
-                      <p>הפיח תטיסרבינוא</p>
-                      <p>יח לת תימדקאה הללכמה</p>
-                      <p>הדוארב טרוא תימדקאה הללכמה</p>
-                      <Link href={"/categories/דומיל םוחת"}>
-                        <h2>דומיל םוחת
+                      <h1> דכל מוסדות הלימוד </h1>
+                      <Link href={"/טכניון/מכינות "}>
+                        <h2>
+                          טכניון
                           <Image
                             width={10}
                             height={10}
@@ -288,10 +277,12 @@ function Navbar({}) {
                           />
                         </h2>
                       </Link>
-                      <p>הקיסיפ </p>
-                      <Link href={"/categories/הקיטמתמ"}>
+                      <p>אוניברסיטת חיפה</p>
+                      <p>המכללה האקדמית תל חי</p>
+                      <p>המכללה האקדמית אורט בראודה</p>
 
-                        <h2> הקיטמתמ
+                      <Link href={"/תחום לימוד/מכינות"}>
+                        <h2>  תחום לימוד
                           <Image
                             width={10}
                             height={10}
@@ -300,7 +291,19 @@ function Navbar({}) {
                           />
                         </h2>
                       </Link>
-                      <p> מכינות </p>
+                      <p>פיסיקה </p>
+                      <Link href={"/מתמטיקה/מכינות"}>
+
+                        <h2> מתמטיקה
+                          <Image
+                            width={10}
+                            height={10}
+                            src="/icons/arrow-left.svg"
+                            style={{ marginLeft: "5px" }}
+                          />
+                        </h2>
+                      </Link>
+                      <p> אנגלית </p>
 
                     </div>
                   </div>
@@ -309,7 +312,7 @@ function Navbar({}) {
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6" fill="none">
                     <path d="M0.827213 0.163933C1.02201 -0.0347736 1.32684 -0.0528378 1.54165 0.10974L1.60319 0.163933L5.99984 4.64894L10.3965 0.163933C10.5913 -0.0347736 10.8961 -0.0528378 11.1109 0.10974L11.1725 0.163933C11.3673 0.362639 11.385 0.673582 11.2256 0.892695L11.1725 0.95547L6.38782 5.83607C6.19302 6.03477 5.8882 6.05284 5.67339 5.89026L5.61185 5.83607L0.827213 0.95547C0.612934 0.736893 0.612934 0.38251 0.827213 0.163933Z" fill="white" />
                   </svg>
-                  תוניכמ</p>
+                  מכינות</p>
               </Dropdown>
 
 
@@ -317,64 +320,65 @@ function Navbar({}) {
                 arrow="55%"
                 content={
                   <div className={`${style_navbar.dropdown}`}>
-                  <div>
-                    <Link href={"/categories/םייראלופופ םיסרוק"}>
-                      <h2>םייראלופופ םיסרוק
-                        <Image
-                          width={10}
-                          height={10}
-                          src="/icons/arrow-left.svg"
-                          style={{ marginLeft: "5px" }}
-                        />
-                      </h2>
-                    </Link>
-                    <p>ןושאר רטסמס - הקיטמתמ תניכמ</p>
-                    <p> ינש רטסמס - הקיטמתמ תניכמ</p>
-                    <p>ןוינכטל הלבק גוויס ןחבמל הנכה </p>
-                    <p> הניכמל הסינכ ןחבמל הנכה</p>
-                  </div>
-                  <div>
-                    <Link href={"/categories/דכל מוסדות הלימוד "}>
+                    <div>
+                      <Link href={"/קורסים פופולאריים/בגרויות במתמטיקה"}>
+                        <h2> קורסים פופולאריים
+                          <Image
+                            width={10}
+                            height={10}
+                            src="/icons/arrow-left.svg"
+                            style={{ marginLeft: "5px" }}
+                          />
+                        </h2>
+                      </Link>
+                      <p>מכינת מתמטיקה - סמסטר ראשון</p>
+                      <p>מכינת מתמטיקה - סמסטר שני</p>
+                      <p> הכנה למבחן סיווג קבלה לטכניון</p>
+                      <p>הכנה למבחן כניסה למכינה </p>
+                    </div>
+                    <div>
                       <h1> דכל מוסדות הלימוד </h1>
-                    </Link>
-                    <h2>ןוינכט
+                      <Link href={"/טכניון/בגרויות במתמטיקה"}>
+                        <h2>
+                          טכניון
+                          <Image
+                            width={10}
+                            height={10}
+                            src="/icons/arrow-left.svg"
+                            style={{ marginLeft: "5px" }}
+                          />
+                        </h2>
+                      </Link>
+                      <p>אוניברסיטת חיפה</p>
+                      <p>המכללה האקדמית תל חי</p>
+                      <p>המכללה האקדמית אורט בראודה</p>
 
-                      <Image
-                        width={10}
-                        height={10}
-                        src="/icons/arrow-left.svg"
-                        style={{ marginLeft: "5px" }}
-                      />
-                    </h2>
-                    <p>הפיח תטיסרבינוא</p>
-                    <p>יח לת תימדקאה הללכמה</p>
-                    <p>הדוארב טרוא תימדקאה הללכמה</p>
-                    <Link href={"/categories/דומיל םוחת"}>
-                      <h2>דומיל םוחת
-                        <Image
-                          width={10}
-                          height={10}
-                          src="/icons/arrow-left.svg"
-                          style={{ marginLeft: "5px" }}
-                        />
-                      </h2>
-                    </Link>
-                    <p>הקיסיפ </p>
-                    <Link href={"/categories/הקיטמתמ"}>
+                      <Link href={"/תחום לימוד/בגרויות במתמטיקה"}>
+                        <h2>  תחום לימוד
+                          <Image
+                            width={10}
+                            height={10}
+                            src="/icons/arrow-left.svg"
+                            style={{ marginLeft: "5px" }}
+                          />
+                        </h2>
+                      </Link>
+                      <p>פיסיקה </p>
+                      <Link href={"/מתמטיקה/בגרויות במתמטיקה"}>
 
-                      <h2> הקיטמתמ
-                        <Image
-                          width={10}
-                          height={10}
-                          src="/icons/arrow-left.svg"
-                          style={{ marginLeft: "5px" }}
-                        />
-                      </h2>
-                    </Link>
-                    <p> מכינות </p>
+                        <h2> מתמטיקה
+                          <Image
+                            width={10}
+                            height={10}
+                            src="/icons/arrow-left.svg"
+                            style={{ marginLeft: "5px" }}
+                          />
+                        </h2>
+                      </Link>
+                      <p> אנגלית </p>
 
+                    </div>
                   </div>
-                </div>
                 }>
                 <p>
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6" fill="none">
@@ -382,6 +386,7 @@ function Navbar({}) {
                   </svg>
                   בגרויות במתמטיקה  </p>
               </Dropdown>
+              
             </>)}
 
         </section>
