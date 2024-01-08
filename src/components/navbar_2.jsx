@@ -168,7 +168,8 @@ function Navbar() {
                 arrow="47%"
                 content={
                   <div className={`${style_navbar.dropdown}`}>
-                    <div>
+                  <div>
+                    <Link href={"/categories/םייראלופופ םיסרוק"}>
                       <h2>םייראלופופ םיסרוק
                         <Image
                           width={10}
@@ -177,26 +178,29 @@ function Navbar() {
                           style={{ marginLeft: "5px" }}
                         />
                       </h2>
-                      <p>ןושאר רטסמס - הקיטמתמ תניכמ</p>
-                      <p> ינש רטסמס - הקיטמתמ תניכמ</p>
-                      <p>ןוינכטל הלבק גוויס ןחבמל הנכה </p>
-                      <p> הניכמל הסינכ ןחבמל הנכה</p>
-                    </div>
-                    <div>
+                    </Link>
+                    <p>ןושאר רטסמס - הקיטמתמ תניכמ</p>
+                    <p> ינש רטסמס - הקיטמתמ תניכמ</p>
+                    <p>ןוינכטל הלבק גוויס ןחבמל הנכה </p>
+                    <p> הניכמל הסינכ ןחבמל הנכה</p>
+                  </div>
+                  <div>
+                    <Link href={"/categories/דכל מוסדות הלימוד "}>
                       <h1> דכל מוסדות הלימוד </h1>
-                      <h2>ןוינכט
+                    </Link>
+                    <h2>ןוינכט
 
-                        <Image
-                          width={10}
-                          height={10}
-                          src="/icons/arrow-left.svg"
-                          style={{ marginLeft: "5px" }}
-                        />
-                      </h2>
-                      <p>הפיח תטיסרבינוא</p>
-                      <p>יח לת תימדקאה הללכמה</p>
-                      <p>הדוארב טרוא תימדקאה הללכמה</p>
-
+                      <Image
+                        width={10}
+                        height={10}
+                        src="/icons/arrow-left.svg"
+                        style={{ marginLeft: "5px" }}
+                      />
+                    </h2>
+                    <p>הפיח תטיסרבינוא</p>
+                    <p>יח לת תימדקאה הללכמה</p>
+                    <p>הדוארב טרוא תימדקאה הללכמה</p>
+                    <Link href={"/categories/דומיל םוחת"}>
                       <h2>דומיל םוחת
                         <Image
                           width={10}
@@ -205,7 +209,9 @@ function Navbar() {
                           style={{ marginLeft: "5px" }}
                         />
                       </h2>
-                      <p>הקיסיפ </p>
+                    </Link>
+                    <p>הקיסיפ </p>
+                    <Link href={"/categories/הקיטמתמ"}>
 
                       <h2> הקיטמתמ
                         <Image
@@ -215,10 +221,11 @@ function Navbar() {
                           style={{ marginLeft: "5px" }}
                         />
                       </h2>
-                      <p>תילגנא</p>
+                    </Link>
+                    <p> מכינות </p>
 
-                    </div>
                   </div>
+                </div>
                 }>
                 <p>
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6" fill="none">
@@ -234,21 +241,25 @@ function Navbar() {
                 content={
                   <div className={`${style_navbar.dropdown}`}>
                     <div>
-                      <h2>םייראלופופ םיסרוק
-                        <Image
-                          width={10}
-                          height={10}
-                          src="/icons/arrow-left.svg"
-                          style={{ marginLeft: "5px" }}
-                        />
-                      </h2>
+                      <Link href={"/categories/םייראלופופ םיסרוק"}>
+                        <h2>םייראלופופ םיסרוק
+                          <Image
+                            width={10}
+                            height={10}
+                            src="/icons/arrow-left.svg"
+                            style={{ marginLeft: "5px" }}
+                          />
+                        </h2>
+                      </Link>
                       <p>ןושאר רטסמס - הקיטמתמ תניכמ</p>
                       <p> ינש רטסמס - הקיטמתמ תניכמ</p>
                       <p>ןוינכטל הלבק גוויס ןחבמל הנכה </p>
                       <p> הניכמל הסינכ ןחבמל הנכה</p>
                     </div>
                     <div>
-                      <h1> דכל מוסדות הלימוד </h1>
+                      <Link href={"/categories/דכל מוסדות הלימוד "}>
+                        <h1> דכל מוסדות הלימוד </h1>
+                      </Link>
                       <h2>ןוינכט
 
                         <Image
@@ -261,25 +272,28 @@ function Navbar() {
                       <p>הפיח תטיסרבינוא</p>
                       <p>יח לת תימדקאה הללכמה</p>
                       <p>הדוארב טרוא תימדקאה הללכמה</p>
-
-                      <h2>דומיל םוחת
-                        <Image
-                          width={10}
-                          height={10}
-                          src="/icons/arrow-left.svg"
-                          style={{ marginLeft: "5px" }}
-                        />
-                      </h2>
+                      <Link href={"/categories/דומיל םוחת"}>
+                        <h2>דומיל םוחת
+                          <Image
+                            width={10}
+                            height={10}
+                            src="/icons/arrow-left.svg"
+                            style={{ marginLeft: "5px" }}
+                          />
+                        </h2>
+                      </Link>
                       <p>הקיסיפ </p>
+                      <Link href={"/categories/הקיטמתמ"}>
 
-                      <h2> הקיטמתמ
-                        <Image
-                          width={10}
-                          height={10}
-                          src="/icons/arrow-left.svg"
-                          style={{ marginLeft: "5px" }}
-                        />
-                      </h2>
+                        <h2> הקיטמתמ
+                          <Image
+                            width={10}
+                            height={10}
+                            src="/icons/arrow-left.svg"
+                            style={{ marginLeft: "5px" }}
+                          />
+                        </h2>
+                      </Link>
                       <p> מכינות </p>
 
                     </div>
@@ -297,7 +311,8 @@ function Navbar() {
                 arrow="55%"
                 content={
                   <div className={`${style_navbar.dropdown}`}>
-                    <div>
+                  <div>
+                    <Link href={"/categories/םייראלופופ םיסרוק"}>
                       <h2>םייראלופופ םיסרוק
                         <Image
                           width={10}
@@ -306,26 +321,29 @@ function Navbar() {
                           style={{ marginLeft: "5px" }}
                         />
                       </h2>
-                      <p>ןושאר רטסמס - הקיטמתמ תניכמ</p>
-                      <p> ינש רטסמס - הקיטמתמ תניכמ</p>
-                      <p>ןוינכטל הלבק גוויס ןחבמל הנכה </p>
-                      <p> הניכמל הסינכ ןחבמל הנכה</p>
-                    </div>
-                    <div>
+                    </Link>
+                    <p>ןושאר רטסמס - הקיטמתמ תניכמ</p>
+                    <p> ינש רטסמס - הקיטמתמ תניכמ</p>
+                    <p>ןוינכטל הלבק גוויס ןחבמל הנכה </p>
+                    <p> הניכמל הסינכ ןחבמל הנכה</p>
+                  </div>
+                  <div>
+                    <Link href={"/categories/דכל מוסדות הלימוד "}>
                       <h1> דכל מוסדות הלימוד </h1>
-                      <h2>ןוינכט
+                    </Link>
+                    <h2>ןוינכט
 
-                        <Image
-                          width={10}
-                          height={10}
-                          src="/icons/arrow-left.svg"
-                          style={{ marginLeft: "5px" }}
-                        />
-                      </h2>
-                      <p>הפיח תטיסרבינוא</p>
-                      <p>יח לת תימדקאה הללכמה</p>
-                      <p>הדוארב טרוא תימדקאה הללכמה</p>
-
+                      <Image
+                        width={10}
+                        height={10}
+                        src="/icons/arrow-left.svg"
+                        style={{ marginLeft: "5px" }}
+                      />
+                    </h2>
+                    <p>הפיח תטיסרבינוא</p>
+                    <p>יח לת תימדקאה הללכמה</p>
+                    <p>הדוארב טרוא תימדקאה הללכמה</p>
+                    <Link href={"/categories/דומיל םוחת"}>
                       <h2>דומיל םוחת
                         <Image
                           width={10}
@@ -334,7 +352,9 @@ function Navbar() {
                           style={{ marginLeft: "5px" }}
                         />
                       </h2>
-                      <p>הקיסיפ </p>
+                    </Link>
+                    <p>הקיסיפ </p>
+                    <Link href={"/categories/הקיטמתמ"}>
 
                       <h2> הקיטמתמ
                         <Image
@@ -344,10 +364,11 @@ function Navbar() {
                           style={{ marginLeft: "5px" }}
                         />
                       </h2>
-                      <p>תילגנא</p>
+                    </Link>
+                    <p> מכינות </p>
 
-                    </div>
                   </div>
+                </div>
                 }>
                 <p>
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6" fill="none">

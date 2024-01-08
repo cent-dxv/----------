@@ -18,7 +18,7 @@ import Cart_Dropdown from '../container/cart_drop'
 // import navigation_dropdown from '../container/navigation_dropdown'
 
 
-function Navbar() {
+function Navbar({}) {
   const [open, setOpen] = useState(false);
   const [open_Dropdown, setDropdown] = useState(false);
 
