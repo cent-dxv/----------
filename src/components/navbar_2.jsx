@@ -46,6 +46,8 @@ function Navbar() {
 
               <Cart_Dropdown
                 arrow="47%">
+                <div className={style_navbar.placeholder}></div>
+
 
                 <Image
                   // className={`${style_navbar.jhkh}`}
@@ -100,6 +102,8 @@ function Navbar() {
               <div className={style_navbar.cart_icon}>
                 <Cart_Dropdown
                   arrow="47%">
+                  <div className={style_navbar.placeholder}></div>
+
 
                   <Image
                     // className={`${style_navbar.jhkh}`}

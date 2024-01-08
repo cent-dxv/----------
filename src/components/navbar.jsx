@@ -35,7 +35,7 @@ function Navbar() {
             {/* this is where nav bar 2 will  .heart_cart_icon replaced for unautorized user*/}
             <EasyDropdown />
 
-            <div className={style_navbar.heart_cart_icon} style={{"margin-left": "10px"}}>
+            <div className={style_navbar.heart_cart_icon} style={{ "margin-left": "10px" }}>
 
               <button>
                 תורבחתה
@@ -50,6 +50,7 @@ function Navbar() {
 
                 <Cart_Dropdown
                   arrow="47%">
+                  <div className={style_navbar.placeholder}></div>
 
                   <Image
                     // className={`${style_navbar.jhkh}`}
@@ -107,6 +108,8 @@ function Navbar() {
               <div className={style_navbar.cart_icon}>
                 <Cart_Dropdown
                   arrow="47%">
+                  <div className={style_navbar.placeholder}></div>
+
 
                   <Image
                     // className={`${style_navbar.jhkh}`}
