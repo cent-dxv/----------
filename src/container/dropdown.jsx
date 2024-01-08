@@ -40,8 +40,9 @@ const Dropdown = ({ children, content, arrow }) => {
       >
 
         <div className={styles.dropdownContent} style={position}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave} >
+          // onMouseEnter={handleMouseEnter}
+          // onMouseLeave={handleMouseLeave}
+           >
           <div className={styles.arrow} style={{ left: arrow }} ></div>
           {content}
         </div>
