@@ -191,9 +191,9 @@ function Navbar({}) {
                     <p> הניכמל הסינכ ןחבמל הנכה</p>
                   </div>
                   <div>
-                    <Link href={"/categories/דכל מוסדות הלימוד "}>
                       <h1> דכל מוסדות הלימוד </h1>
-                    </Link>
+                    <Link href={"/categories/ןוינכט"}>
+                  
                     <h2>ןוינכט
 
                       <Image
@@ -202,7 +202,7 @@ function Navbar({}) {
                         src="/icons/arrow-left.svg"
                         style={{ marginLeft: "5px" }}
                       />
-                    </h2>
+                    </h2>  </Link>
                     <p>הפיח תטיסרבינוא</p>
                     <p>יח לת תימדקאה הללכמה</p>
                     <p>הדוארב טרוא תימדקאה הללכמה</p>
