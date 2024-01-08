@@ -83,7 +83,7 @@
   overflow: hidden;
   transition: max-height 0.5s ease-out;
 
-  p {
+  p , a {
     color: #fff;
     text-align: end;
     padding: 8px 40px;
@@ -94,6 +94,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: 16px; /* 100% */
+    display: block;
+    
+  }
+
+  a{
+    padding: 0;
   }
 }
 

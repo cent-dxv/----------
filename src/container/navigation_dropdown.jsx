@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 
 import styles from '@/styles/container/navigation_dropdown.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
+
 
 const Navigation_dropdown = ({ isOpen, setIsOpen }) => {
 
@@ -18,7 +20,7 @@ const Navigation_dropdown = ({ isOpen, setIsOpen }) => {
           onClick={() => { setDropdown(open_Dropdown != 1 ? 1 : 0) }}
         >
           <button className={styles.dropdown__btn}>
-            <Image 
+            <Image
               src='/icons/arrow-down-2.svg'
               width={12}
               height={12}
@@ -28,10 +30,12 @@ const Navigation_dropdown = ({ isOpen, setIsOpen }) => {
             <span>בגרויות במתמטיקה</span>
 
           </button>
-          <div className={styles.dropdown__content} style={{ "max-height": open_Dropdown == 1 ? '150px' : '0' }} >
-            <p>item 1</p>
-            <p>item 2</p>
-            <p>item 3</p>
+          <div className={styles.dropdown__content} style={{ "max-height": open_Dropdown == 1 ? 'fit-content' : '0' }} >
+            <Link href={"/מכינת מתמטיקה - סמסטר ראשון/קורסים פופולאריים/בגרויות במתמטיקה"}> <p>מכינת מתמטיקה - סמסטר ראשון</p>  </Link>
+            <Link href={"/מכינת מתמטיקה - סמסטר שני/קורסים פופולאריים/בגרויות במתמטיקה"}> <p>מכינת מתמטיקה - סמסטר שני</p> </Link>
+            <Link href={"/הכנה למבחן סיווג קבלה לטכניון/קורסים פופולאריים/בגרויות במתמטיקה"}> <p> הכנה למבחן סיווג קבלה לטכניון</p> </Link>
+            <Link href={"/הכנה למבחן כניסה למכינה/קורסים פופולאריים/בגרויות במתמטיקה"}> <p>הכנה למבחן כניסה למכינה </p> </Link>
+
 
 
           </div>
@@ -41,20 +45,20 @@ const Navigation_dropdown = ({ isOpen, setIsOpen }) => {
           onClick={() => { setDropdown(open_Dropdown != 2 ? 2 : 0) }}
         >
           <button className={styles.dropdown__btn}>
-          <Image 
+            <Image
               src='/icons/arrow-down-2.svg'
               width={12}
               height={12}
 
               style={{ "transform": open_Dropdown == 2 ? 'rotate(180deg)' : 'rotate(0deg)' }}
             />
-            <span>5 מכינות</span>
+            <span>מכינות</span>
 
           </button>
-          <div className={styles.dropdown__content} style={{ "max-height": open_Dropdown == 2 ? '150px' : '0' }} >
-          <p>item 1</p>
-            <p>item 2</p>
-            <p>item 3</p>
+          <div className={styles.dropdown__content} style={{ "max-height": open_Dropdown == 2 ? 'fit-content' : '0' }} >
+            <Link href={"/אוניברסיטת חיפה/טכניון/מכינות"}> <p>אוניברסיטת חיפה</p> </Link>
+            <Link href={"/המכללה האקדמית תל חי/טכניון/מכינות"}> <p>המכללה האקדמית תל חי</p> </Link>
+            <Link href={"/המכללה האקדמית אורט בראודה/טכניון/מכינות"}> <p>המכללה האקדמית אורט בראודה</p> </Link>
           </div>
         </div>
 
@@ -63,7 +67,7 @@ const Navigation_dropdown = ({ isOpen, setIsOpen }) => {
           onClick={() => { setDropdown(open_Dropdown != 3 ? 3 : 0) }}
         >
           <button className={styles.dropdown__btn}>
-          <Image 
+            <Image
               src='/icons/arrow-down-2.svg'
               width={12}
               height={12}
@@ -73,8 +77,8 @@ const Navigation_dropdown = ({ isOpen, setIsOpen }) => {
             <span>אקדמיה </span>
 
           </button>
-          <div className={styles.dropdown__content} style={{ "max-height": open_Dropdown == 3 ? '150px' : '0' }} >
-          <p>item 1</p>
+          <div className={styles.dropdown__content} style={{ "max-height": open_Dropdown == 3 ? 'fit-content' : '0' }} >
+            <p>item 1</p>
             <p>item 2</p>
             <p>item 3</p>
           </div>
