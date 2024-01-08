@@ -259,12 +259,16 @@
     margin: 15px 0;
   }
 
+  ::-webkit-scrollbar {
+    width: 0;
+  }
   .CartContent {
     border-radius: 20px;
     background: #fff;
     width: 350px;
     max-height: calc(100vh - 60px);
     overflow: scroll;
+
     // height: 399px;
     position: absolute;
     display: block;
