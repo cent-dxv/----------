@@ -356,13 +356,13 @@
       justify-content: space-between;
       margin: 30px 0;
       svg {
-        margin: 5px 0;
+        margin: 6px 0;
         // width: 20px;
         // height: 20px;
         width: 17px;
         height: 17px;
-        @media (max-width: 480px) {
-          // margin: 4px 0;
+        @media (max-width: 430px) {
+          margin:  0;
         }
       }
       button{
