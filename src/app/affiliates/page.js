@@ -10,24 +10,17 @@ function Home() {
     <>
       <Navbar />
       <div className={styles.main}>
-
         <div className={styles.background}>
-
         <Image className={styles.line}
               src="/images/background/Group98.png"
               fill
               object-fit="contain"
-
             />
-
-     
-
           <div className={styles.dot_background_1}>
             <Image
               src="/images/background/dot_page1.png"
               fill
               object-fit="contain"
-
             />
           </div>
 
