@@ -85,9 +85,9 @@ function Navbar({ }) {
           <div className={style_navbar.top_nav_drawer} style={{ display: 'flex', alignItems: "center" }} >
 
             <div className={style_navbar.nav_bar_link} style={{ display: 'flex', alignItems: "center", "margin-top": "8px" }}>
-              <Link href="#">יטרפ רועיש תעיבק</Link>
-              <Link href="#">MOK - ב ףסכ וחיוורת</Link>
-              <Link href="/">ישאר</Link>
+            <Link href="#"> קביעת שיעור פרטי </Link>
+              <Link href="#"> המליצו ותרוויחו </Link>
+              <Link href="/">ראשי</Link>
             </div>
 
 
