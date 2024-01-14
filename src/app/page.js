@@ -444,7 +444,7 @@ function Home() {
         <div className={styles.section}>
           <div className={styles.img}>
             <Image
-              src={"/images/home/card/Group 194.png"}
+              src={"/images/home/card/Group194.png"}
               fill
               objectFit='contain'
             />
@@ -479,7 +479,7 @@ function Home() {
           </div>
           <div className={styles.img}>
             <Image
-              src={"/images/home/card/Group 199.png"}
+              src={"/images/home/card/Group199.png"}
               fill
               objectFit='contain'
             />
@@ -490,7 +490,7 @@ function Home() {
         <div className={styles.section}>
           <div className={styles.img}>
             <Image
-              src={"/images/home/card/Group 200.png"}
+              src={"/images/home/card/Group200.png"}
               fill
               objectFit='contain'
             />
@@ -524,7 +524,7 @@ function Home() {
           </div>
           <div className={styles.img}>
             <Image
-              src={"/images/home/card/Group 201.png"}
+              src={"/images/home/card/Group201.png"}
               fill
               objectFit='contain'
             />
