@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '@/components/navbar_2'
 
-import styles from '@/styles/components/home_page.module.scss'
+import styles from '@/styles/components/home.module.scss'
 import Footer from '@/components/footer'
 import Image from 'next/image'
 
@@ -9,18 +9,103 @@ function Home() {
   return (
     <>
       <Navbar />
+
+      <div className={styles.landing}>
+
+
+        <div className={styles.background_img}>
+          <Image
+            src={"/images/home/bg_pattern.svg"}
+            fill
+            objectFit='contain'
+          />
+        </div>
+
+        <Image
+          className={styles.student_img}
+          src={"/images/home/student.png"}
+          fill
+          objectFit='contain'
+        />
+
+        <div className={styles.header}>
+          <h1>קורסים אונליין</h1>
+          <h1>לבגרויות, מכינות קדם אקדמיות</h1>
+          <h1>ותואר ראשון</h1>
+          <p>
+            םיררחושמ םילייחו תויורגב ירפשמו ימילשמ ,רפס תיב ידימלתל טנרטניאב םידומיל
+            <br /> .הקיסיפו הקיטמתמב דומיל תומר לכב
+            <br />
+            ןושאר ראותל הלבק יאנת רופיש תארקל תוימדקא םדק תוניכמ ידומיל
+            <br /> .ההובג הלכשה תודסומב םידמולל הביל יסרוקו תוללכמו תואטיסרבינואל
+          </p>
+
+
+          <button className={styles.action_btn}> !יש לי שאלה </button>
+
+          <span>
+            <p>45k+ משתמשים קבועים.</p>
+            <div>
+
+              <div className={styles.profiles}>
+
+              <div className={styles.avatar}>
+                <Image
+                  alt="affilliates.module.scss"
+                  src="https://xsgames.co/randomusers/avatar.php?g=female"
+                  width={2250}
+                  height={1390}
+                // layout="responsive"
+                />
+              </div>
+
+              <div className={styles.avatar}>
+                <Image
+                  alt="affilliates.module.scss"
+                  src="https://xsgames.co/randomusers/avatar.php?g=male"
+                  width={2250}
+                  height={1390}
+                // layout="responsive"
+                />
+              </div>
+
+              <div className={styles.avatar}>
+                <Image
+                  alt="affilliates.module.scss"
+                  src="https://xsgames.co/randomusers/avatar.php?g=female"
+                  width={2250}
+                  height={1390}
+                // layout="responsive"
+                />
+              </div>
+
+              <div className={styles.avatar}>
+                <Image
+                  alt="affilliates.module.scss"
+                  src="https://xsgames.co/randomusers/avatar.php?g=male"
+                  width={2250}
+                  height={1390}
+                // layout="responsive"
+                />
+              </div>
+              </div>
+            </div>
+
+          </span>
+        </div>
+      </div>
+
       <div className={styles.main}>
 
-        <div className={styles.background}>
+        {/* <div className={styles.background}>
 
-        <Image className={styles.line}
-              src="/images/background/Group98.png"
-              fill
-              object-fit="contain"
+          <Image className={styles.line}
+            src="/images/background/Group98.png"
+            fill
+            object-fit="contain"
+          />
 
-            />
 
-     
 
           <div className={styles.dot_background_1}>
             <Image
@@ -42,65 +127,7 @@ function Home() {
           </div>
 
 
-        </div>
-
-
-        <h1>  םתאש םיצרמה םע םייטרפ םירועיש </h1>
-        <h1>   רואים בקורסים אונליין </h1>
-
-
-
-        <ul>
-
-
-          <card className={styles.card}>
-            <h2>ארז כהן</h2>
-            <p>  ןוינכטה תמגוד ,ץראב םיבשחנ תודסומב דמלמ ,ירוקנא לש דומיל ירפס רבחמ .םוחתב ןויסינ תונש 20 לעמ םע ריכב הצרמ</p>
-            <button>תמליצו ותרוויחו </button>
-
-            <div className={styles.card_img}>
-              <Image
-                src="/images/page1/card_img1.png"
-                fill
-                objectFit='contain'
-
-              />
-            </div>
-          </card>
-
-          <card className={styles.card}>
-            <h2>  עידו מרבך </h2>
-            <p>  ןוינכטה תמגוד ,ץראב םיבשחנ תודסומב דמלמ ,ירוקנא לש דומיל ירפס רבחמ .םוחתב ןויסינ תונש 20 לעמ םע ריכב הצרמ  </p>
-            <button> תמליצו ותרוויחו </button>
-
-            <div className={styles.card_img}>
-              <Image
-                src="/images/page1/card_img2.png"
-                fill
-                objectFit='contain'
-              />
-            </div>
-
-          </card>
-
-          <card className={styles.card}>
-            <h2>ארז כהן</h2>
-            <p>  ןוינכטה תמגוד ,ץראב םיבשחנ תודסומב דמלמ ,ירוקנא לש דומיל ירפס רבחמ .םוחתב ןויסינ תונש 20 לעמ םע ריכב הצרמ</p>
-            <button>תמליצו ותרוויחו </button>
-
-            <div className={styles.card_img}>
-              <Image
-                src="/images/page1/card_img3.png"
-                fill
-                objectFit='contain'
-
-              />
-            </div>
-
-          </card>
-
-        </ul>
-
+        </div> */}
 
       </div>
 

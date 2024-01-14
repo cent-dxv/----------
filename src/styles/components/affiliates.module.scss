@@ -1,0 +1,209 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 0 0;
+
+  @media (max-width: 1500px) {
+    padding: 50px 0 0 0;
+  }
+
+  .background {
+    .line {
+      position: absolute;
+
+      position: absolute;
+      height: 250% !important;
+      width: 100%;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      color: transparent;
+      @media (max-width: 1200px) {
+        height: 220% !important;
+        top: 137px !important;
+      }
+
+      @media (max-width: 1044px) {
+        display: none;
+      }
+    }
+
+    .dot_background_1 {
+      width: 411px;
+      height: 513px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      top: 200px;
+    }
+
+    .dot_background_2 {
+      width: 307px;
+      height: 313px;
+      transform: rotate(deg);
+      position: absolute;
+      right: 0;
+      bottom: -335px;
+    }
+  }
+
+  h1 {
+    color: #1c2135;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 100% */
+    position: relative;
+    z-index: 9;
+
+    @media (max-width: 700px) {
+      margin: 0 40px;
+    }
+
+    &:nth-child(3) {
+      @media (max-width: 700px) {
+        margin-bottom: 15px;
+      }
+    }
+
+    @media (max-width: 1500px) and (min-width: 700px) {
+      font-size: 54px;
+    }
+    @media (max-width: 1040px) {
+      font-size: 44px;
+    }
+
+    @media (max-width: 760px) {
+      font-size: 30px;
+      line-height: 30px; /* 100% */
+    }
+  }
+  ul {
+    display: flex;
+    z-index: 9;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 368px;
+    height: 553px;
+    border-radius: 16px;
+    padding: 0 20px;
+    margin: 70px 25px;
+    text-align: center;
+    position: relative;
+    @media (max-width: 480px) {
+      width: 100%;
+      height: 600px;
+    }
+    
+    @media (max-width: 700px) {
+      margin: 10px 40px !important;      
+    
+    }
+
+    @media (max-width: 1100px) {
+      margin: 70px 15px;
+    }
+    @media (max-width: 1500px) and (min-width: 700px) {
+      padding: 0 10px;
+
+      width: 318px;
+      height: 503px;
+    }
+
+    background: linear-gradient(
+      152deg,
+      #e5f5fc 0%,
+      #e4e5fe 27.99%,
+      #eaedfe 71.03%,
+      #f6fbff 99.06%
+    );
+
+    h2 {
+      margin: 30px 0 10px 0;
+      color: #152046;
+      text-align: center;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      // line-height: 18px; /* 60% */
+      @media (max-width: 480px) {
+        font-size: 35px;
+        margin: 30px 0 0px 0;
+        
+      }
+
+      @media (max-width: 1500px) and (min-width: 700px) {
+        font-size: 26px;
+        margin: 20px 0 5px 0;
+      }
+    }
+    p {
+      padding: 10px 0 20px 0;
+      color: #6c738f;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      // line-height: 22px; /* 122.222% */
+
+      @media (max-width: 480px) {
+        font-size: 20px;
+        
+      }
+
+      @media (max-width: 1500px) and (min-width: 700px) {
+        font-size: 16px;
+      }
+    }
+
+    .card_img {
+      position: absolute;
+      bottom: 0;
+      margin: auto;
+      // width: 100%;
+      width: 268px;
+      height: 268px;
+      // bottom: -20px;
+      // height: 250px;
+
+      @media (max-width: 480px) {
+        width: 300px;
+        height: 300px;
+        
+      }
+
+      @media (max-width: 1500px) and (min-width: 700px) {
+        width: 250px;
+        height: 250px;
+        // bottom: -15px;
+      }
+    }
+
+    button {
+      padding: 19px 51px;
+      border-radius: 8px;
+      border: 2px solid rgba(255, 255, 255, 0.23);
+      background: #1c2135;
+
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 18px; /* 100% */
+
+      @media (max-width: 700px) {
+        width: 95%;
+      }
+    }
+  }
+}

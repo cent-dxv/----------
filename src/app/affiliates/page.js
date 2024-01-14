@@ -1,21 +1,21 @@
 import React from 'react'
 import Navbar from '@/components/navbar_2'
 
-import styles from '@/styles/components/home_page.module.scss'
+import styles from '@/styles/components/affiliates.module.scss'
 import Footer from '@/components/footer'
 import Image from 'next/image'
 
-function Home() {
+function Affiliates() {
   return (
     <>
       <Navbar />
       <div className={styles.main}>
         <div className={styles.background}>
-        <Image className={styles.line}
-              src="/images/background/Group98.png"
-              fill
-              object-fit="contain"
-            />
+          <Image className={styles.line}
+            src="/images/background/Group98.png"
+            fill
+            object-fit="contain"
+          />
           <div className={styles.dot_background_1}>
             <Image
               src="/images/background/dot_page1.png"
@@ -91,9 +91,7 @@ function Home() {
             </div>
 
           </card>
-
         </ul>
-
 
       </div>
 
@@ -104,4 +102,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Affiliates
