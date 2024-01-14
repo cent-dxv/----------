@@ -312,7 +312,7 @@ function Home() {
                   {tab_items?.carousel.map((item, index) => {
                     return (<SwiperSlide>
                       <card key={index}>
-                        {sub_active_items}
+                        
                         <h2>   {item.header} </h2>
                         <div className={styles.horizontal_divider}></div>
                         <ul>

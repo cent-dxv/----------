@@ -6,6 +6,13 @@
   width: 100%;
   z-index: 1;
   margin-top: 20px;
+
+  display: none;
+
+  @media (max-width:650px) {
+    display:inline-block ;
+    
+  }
   // height: 47px;
 }
 
