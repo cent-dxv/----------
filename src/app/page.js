@@ -404,7 +404,7 @@ function Home() {
           <div className={styles.img}>
 
             <Image
-              src={"/images/home/Group 72.png"}
+              src={"/images/home/Group72.png"}
               fill
               objectFit='contain'
             />
