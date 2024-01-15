@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import Navbar from '@/components/navbar_2'
 
 import styles from '@/styles/components/home.module.scss'
@@ -16,7 +16,7 @@ import 'swiper/css/pagination';
 
 const data = [
   {
-    position: { left: "180px" },
+    position: { marginLeft: "-390px" },
     heading: "קורסים של תואר ראשון",
     description: `בחלק של מכינות אקדמיות באתר MOK תמצאו קורסים החופפים לקורסי ליבה הנלמדים בתואר הראשון למדעים מדוייקים 
   או תארי הנדסה וכוללים קורסים כמו אלגברה 1מ, אלגברה לינארית, חדוא 1, חדוא 2, אינפי ועוד. 
@@ -38,7 +38,7 @@ const data = [
   },
 
   {
-    position: { left: "356px" },
+    position: { marginLeft: "-50px" },
     heading: "קורסים של מכינות קדם אקדמיות",
     description: `בחלק של מכינות אקדמיות ב-MOK תמצאו קורסים המשפרים את סיכויים להצליח במכינה שלכם על ידי boost נוסף 
   של ארגון החומר לפי סרטוני וידאו מסודרים בהתאם לסילבוס עדכני וייעודי למוסד לימוד שלכם.
@@ -69,7 +69,7 @@ const data = [
   },
 
   {
-    position: { left: "580px" },
+    position: { marginLeft: "360px" },
     heading: "קורסים של בגרויות במתמטיקה",
     description: `ב תמצאו קורסים אונליין ללימוד כל הרמות במתמטיקה עבור 5, 4, 3 יחידות לימוד בהתאם ים
   העדכנית של משרד החינוך. הקורסים מתאימים הן לתלמידי בית ספר שרוצים לשפר את השליטה שלהם בחומר לפני הבחינה או המתכונת והן
@@ -110,13 +110,23 @@ const data = [
 
 import result_data from "../../mok_data";
 import Course_dropdown from '../container/corse_dropdown'
+import Card from '../container/card'
 // import Course_dropdown from "@/components/"
 
 function Home() {
 
   const [tab_items, setActive_tab] = useState(data[1])
-  const [sub_active_items, setsub_Active_tab] = useState(0)
-  const [open_Dropdown, setDropdown] = useState(0);
+  const [sub_active_items, setsub_Active_tab] = useState(3)
+  const [open_Dropdown, setDropdown] = useState(false);
+
+
+  const swiperRef = useRef(null);
+
+  const changeInitialSlide = (newInitialSlide) => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slideTo(newInitialSlide);
+    }
+  };
 
 
   return (
@@ -226,6 +236,7 @@ function Home() {
             fill
             objectFit='cover'
           />
+
         </div>
 
 
@@ -244,12 +255,15 @@ function Home() {
                 <button onClick={() => setActive_tab(data[2])}> הקיטמתמב תויורגב </button>
                 <button className={styles.mobile_version} onClick={() => setDropdown(!open_Dropdown)}>  תבחרו תחום שתרצו ללמוד </button>
               </nav>
-              <div className={styles.arrow} style={tab_items?.position}>
+              <div className={`${styles.arrow} `} style={tab_items?.position}>
                 <div className={styles.pointer}></div>
               </div>
-              <Course_dropdown isOpen={open_Dropdown} setIsOpen={setDropdown} setActive_tab={setActive_tab} data={data} setsub_Active_tab={setsub_Active_tab} />
+              <Course_dropdown isOpen={open_Dropdown} setIsOpen={setDropdown} setActive_tab={setActive_tab} data={data} setsub_Active_tab={changeInitialSlide} />
 
-              {tab_items && (<div className={styles.description}>
+              {tab_items  && (
+              <div className={styles.description}
+              style={open_Dropdown ?  {opacity:0.2} : {opacity:1}}
+              >
 
                 <div>
                   <h1>{tab_items?.heading}  </h1>
@@ -303,7 +317,8 @@ function Home() {
                   style={{
                     "--swiper-pagination-color": "#F19B1A"
                   }}
-                  initialSlide={parseInt(sub_active_items)}
+                  // initialSlide={0}
+                  ref={swiperRef}
                   pagination={{
                     dynamicBullets: true,
                   }}
@@ -312,7 +327,7 @@ function Home() {
                   {tab_items?.carousel.map((item, index) => {
                     return (<SwiperSlide>
                       <card key={index}>
-                        
+
                         <h2>   {item.header} </h2>
                         <div className={styles.horizontal_divider}></div>
                         <ul>
@@ -348,19 +363,25 @@ function Home() {
           </div>)}
 
 
-
-
-
           <div className={styles.banner}>
             <h1>תהפכו להיות MOK-ים ותרוויחו</h1>
 
             <div className={styles.banner_img}>
 
               <Image
+                className={styles.descktop}
                 src={"/images/home/banner.png"}
                 fill
                 objectFit='contain'
               />
+
+              <Image
+                className={styles.mobile}
+                src={"/images/home/banner_mobile.png"}
+                fill
+                objectFit='contain'
+              />
+
             </div>
 
           </div>
@@ -374,9 +395,26 @@ function Home() {
               <h3 className={style_swiper.text}> קורסים מלאים    </h3>
             </div>
             {/* <Card /> */}
-            <CustomSwiper data={result_data.sort(function () { return 0.5 - Math.random() })} />
-          </article>
+            <div className={styles.descktop}>
 
+              <CustomSwiper data={result_data.sort(function () { return 0.5 - Math.random() })} />
+            </div>
+
+            <div className={styles.mobile}>
+              <Swiper
+
+
+                className={styles.carousel_mobile}>
+                {result_data.sort(function () { return 0.5 - Math.random() }).map((item, index) => {
+                  return (<SwiperSlide>
+                    <Card key={index} items_data={item} />
+                  </SwiperSlide>)
+                }
+                )}
+              </Swiper>
+
+            </div>
+          </article>
 
           <article>
             <div className={style_swiper.title}>
@@ -384,10 +422,26 @@ function Home() {
               <h3 className={style_swiper.text}> קורסים מלאים    </h3>
             </div>
             {/* <Card /> */}
-            <CustomSwiper data={result_data.sort(function () { return 0.5 - Math.random() })} />
+            <div className={styles.descktop}>
+
+              <CustomSwiper data={result_data.sort(function () { return 0.5 - Math.random() })} />
+            </div>
+
+            <div className={styles.mobile}>
+              <Swiper
+
+
+                className={styles.carousel_mobile}>
+                {result_data.sort(function () { return 0.5 - Math.random() }).map((item, index) => {
+                  return (<SwiperSlide>
+                    <Card key={index} items_data={item} />
+                  </SwiperSlide>)
+                }
+                )}
+              </Swiper>
+
+            </div>
           </article>
-
-
 
           <article>
             <div className={style_swiper.title}>
@@ -395,12 +449,39 @@ function Home() {
               <h3 className={style_swiper.text}> קורסים מלאים    </h3>
             </div>
             {/* <Card /> */}
-            <CustomSwiper data={result_data.sort(function () { return 0.5 - Math.random() })} />
+            <div className={styles.descktop}>
+
+              <CustomSwiper data={result_data.sort(function () { return 0.5 - Math.random() })} />
+            </div>
+
+            <div className={styles.mobile}>
+              <Swiper
+
+
+                className={styles.carousel_mobile}>
+                {result_data.sort(function () { return 0.5 - Math.random() }).map((item, index) => {
+                  return (<SwiperSlide>
+                    <Card key={index} items_data={item} />
+                  </SwiperSlide>)
+                }
+                )}
+              </Swiper>
+
+            </div>
           </article>
 
         </div>
 
         <div className={styles.full_banner}>
+
+          <div className={styles.background_pattern}>
+            <Image
+              src={"/images/home/bg_pattern.svg"}
+              fill
+              objectFit='cover'
+            />
+          </div>
+
           <div className={styles.img}>
 
             <Image
@@ -436,6 +517,8 @@ function Home() {
             fill
             objectFit='cover'
           />
+
+
         </div>
 
 
