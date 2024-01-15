@@ -178,7 +178,7 @@ function Home() {
 
               <div className={styles.avatar}>
                 <Image
-                  alt="affilliates.module.scss"
+                  alt="GF"
                   src="https://xsgames.co/randomusers/avatar.php?g=female"
                   width={2250}
                   height={1390}
@@ -188,7 +188,7 @@ function Home() {
 
               <div className={styles.avatar}>
                 <Image
-                  alt="affilliates.module.scss"
+                  alt="GF"
                   src="https://xsgames.co/randomusers/avatar.php?g=male"
                   width={2250}
                   height={1390}
@@ -198,7 +198,7 @@ function Home() {
 
               <div className={styles.avatar}>
                 <Image
-                  alt="affilliates.module.scss"
+                  alt="GF"
                   src="https://xsgames.co/randomusers/avatar.php?g=female"
                   width={2250}
                   height={1390}
@@ -208,7 +208,7 @@ function Home() {
 
               <div className={styles.avatar}>
                 <Image
-                  alt="affilliates.module.scss"
+                  alt="GF"
                   src="https://xsgames.co/randomusers/avatar.php?g=male"
                   width={2250}
                   height={1390}
