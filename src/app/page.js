@@ -293,17 +293,18 @@ function Home() {
                           (
                             <span style={{ display: "flex" }}>
                               {list_item.map((li_item) => (
-                                <li key={index} style={li_item.position}>
+                                <button key={index} style={li_item.position}>
                                   {li_item.title}
                                   <Image src={li_item.image} width={14} height={14} />
-                                </li>
+                            </button>
                               ))}
                             </span>
                           ) : (
-                            <li key={index} style={list_item.position}>
+                            <button key={index} style={list_item.position}> 
+
                               {list_item.title}
                               <Image src={list_item.image} width={14} height={14} />
-                            </li>
+                          </button>
                           )
                       )}
 
