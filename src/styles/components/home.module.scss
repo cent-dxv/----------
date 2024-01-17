@@ -555,23 +555,23 @@
           margin: 5px 3px !important;
         }
       }
+      button {
+        margin: 10px 20px;
+        padding: 5px 8px;
+        list-style: none;
+        background: #fff;
+        width: fit-content;
+        border-radius: 8px;
+        display: flex;
+        font-size: 14px;
+  
+        img {
+          margin: 3px 5px;
+        }
+      }
     }
 
     
-    button {
-      margin: 10px 20px;
-      padding: 5px 8px;
-      list-style: none;
-      background: #fff;
-      width: fit-content;
-      border-radius: 8px;
-      display: flex;
-      font-size: 14px;
-
-      img {
-        margin: 3px 5px;
-      }
-    }
 
     .action_btn {
       color: #1e2236;
