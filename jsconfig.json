@@ -5,6 +5,7 @@
       "@/components/*": ["./src/components/*"],
       "@/styles/*": ["./src/styles/*"],
       "@/public/*": ["./public/*"],
+      "@/context": ["./src/app/contextApi.js"],
     }
   }
 }

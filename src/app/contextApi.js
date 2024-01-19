@@ -14,7 +14,6 @@ export const CartProvider = ({ children }) => {
     setCartItems(data);
   }, [])
 
-
   // Add item to the cart
   const addItemToCart = (item) => {
     !cartItems?.some((item_data) => item_data.id === item.id) && setCartItems((prevData) => {
@@ -26,17 +25,24 @@ export const CartProvider = ({ children }) => {
 
   // Remove item from the cart
   const removeItemFromCart = (itemId) => {
-    // setCartItems(cartItems.filter((item) => item.id !== itemId));
-    // localStorage.setItem("cartItems", JSON.stringify(cartItems));
-    // console.log(cartItems ,JSON.parse(localStorage.getItem("cartItems")) )
 
     setCartItems((prevData) => {
       const updatedData = prevData.filter((item) => item.id !== itemId);
       localStorage.setItem("cartItems", JSON.stringify(updatedData));
       return updatedData;
     });
-
   };
+
+  const updateItem = (itemId, months) => {
+    setCartItems((prevData) => {
+      const updatedData = prevData.map((e) => (e.id === itemId ? { ...e, subscription_period: months } : e));
+      localStorage.setItem("cartItems", JSON.stringify(updatedData));
+      return updatedData;
+    });
+
+    // console.log(cartItems, JSON.parse(localStorage.getItem("cartItems")))
+  };
+
 
   // Clear the cart
   const clearCart = () => {
@@ -48,6 +54,7 @@ export const CartProvider = ({ children }) => {
   const cartContextValue = {
     cartItems,
     addItemToCart,
+    updateItem,
     removeItemFromCart,
     clearCart,
   };
