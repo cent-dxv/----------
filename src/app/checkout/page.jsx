@@ -14,10 +14,10 @@ import { CartContext } from '@/context'
 
 
 function checkout() {
-  const [Dropdown, setDropdown] = useState(0)
+  const [Dropdown, setDropdown] = useState([])
   const { cartItems, updateItem, addItemToCart, removeItemFromCart, clearCart } = useContext(CartContext);
 
-
+{console.log(cartItems)}
   return (
     <>
       <Navbar />
@@ -28,7 +28,7 @@ function checkout() {
 
           <card className={styles.price_card}>
             <h2>סה"כ </h2>
-            <span>₪ 185.00</span>
+            <span>₪ {cartItems.reduce((sum,item)=>sum + parseInt(item.price) ,0)}</span>
             <p>את קודי הנחות וניצול צבירה ניתן להכניס בעמוד התשלום</p>
             <button> םולשתל</button>
           </card>
@@ -108,13 +108,12 @@ function checkout() {
                       const month = index === 0 ? 1 : index === 1 ? 3 : index === 2 ? 6 : 12;
                       const selected = "subscription_period" in item & item.subscription_period === month ? true : null;
 
-                      console.log(selected, month)
                       return (
 
                         <SwiperSlide key={index}>
                           <button onClick={() => { updateItem(item.id, month) }} style={selected ? { border: "3px solid #FF5E3B", borderRadius: "16px" } : {}}>
 
-                            <card>
+                            <card >
                               <div className={styles.course_img}>
                                 <Image
                                   fill
@@ -156,43 +155,42 @@ function checkout() {
 
 
 
-            <div className={styles.card} style={Dropdown == 1 ? { maxHeight: "300px" } : { maxHeight: "67px" }} >
-              <button className={styles.hearder} onClick={() => setDropdown(Dropdown == 1 ? 0 : 1)}>
-                <svg style={Dropdown == 1 ? { transform: 'rotate(180deg)' } : {}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <div className={styles.card} style={ Dropdown.includes(1) ? { maxHeight: "300px" } : { maxHeight: "70px" }} >
+              <button className={styles.hearder} onClick={() => setDropdown(Dropdown.includes(1) ? Dropdown.filter(item => item !== 1) : [...Dropdown, 1])}>
+                <svg style={Dropdown.includes(1) ? { transform: 'rotate(180deg)' } : {}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.0625 8C1.0625 11.831 4.16825 14.9375 8 14.9375C11.831 14.9375 14.9375 11.831 14.9375 8C14.9375 4.169 11.831 1.0625 8 1.0625C4.16825 1.0625 1.0625 4.169 1.0625 8Z" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   <path d="M5.39648 6.91821L7.99973 9.53271L10.603 6.91821" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
                 <div>
                   <h1> נצלו הסכום שצברת </h1>
-                  <p style={Dropdown == 1 ? { opacity: "1" } : { opacity: "0" }}> <span> ₪ 189.00</span>  צברת </p>
+                  <p style={Dropdown.includes(1) ? { opacity: "1" } : { opacity: "0" }}> <span> ₪ 189.00</span>  צברת </p>
                 </div>
               </button>
 
               <h3> :תרשום את הסכום שתרצה לנצל </h3>
-              <span> <button>הפעל </button> <input type="text" /> </span>
+              <span> <button>הפעל </button> <input  type="text"  dir="rtl" /> </span>
               <p>  שים לב: אפשר להמשיך לצבור ולנצל את היתרה בקנייה הבאה</p>
 
             </div>
 
-            <div className={styles.card} style={Dropdown == 1 ? { maxHeight: "300px" } : { maxHeight: "67px" }} >
-              <button className={styles.hearder} onClick={() => setDropdown(Dropdown == 1 ? 0 : 1)}>
-                <svg style={Dropdown == 1 ? { transform: 'rotate(180deg)' } : {}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+
+            <div className={styles.card} style={  Dropdown.includes(2) ? { maxHeight: "300px" } : { maxHeight: "70px" }} >
+              <button className={styles.hearder} onClick={() => setDropdown(Dropdown.includes(2) ? Dropdown.filter(item => item !== 2) : [...Dropdown, 2])}>
+                <svg style={Dropdown.includes(2) ? { transform: 'rotate(180deg)' } : {}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.0625 8C1.0625 11.831 4.16825 14.9375 8 14.9375C11.831 14.9375 14.9375 11.831 14.9375 8C14.9375 4.169 11.831 1.0625 8 1.0625C4.16825 1.0625 1.0625 4.169 1.0625 8Z" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   <path d="M5.39648 6.91821L7.99973 9.53271L10.603 6.91821" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
+
                 <div>
-                  <h1> ?יש לך קוד הנחה\קופון   </h1>
-                  <p style={Dropdown == 1 ? { opacity: "1" } : { opacity: "0" }}> <span> ₪ 189.00</span>  צברת </p>
+                  <h1> ?יש לך קוד הנחה\קופון</h1>
                 </div>
               </button>
 
-              <h3> :תרשום את הסכום שתרצה לנצל </h3>
-              <span> <button>הפעל </button> <input type="text" /> </span>
-              <p>  שים לב: אפשר להמשיך לצבור ולנצל את היתרה בקנייה הבאה</p>
+              <h3> הזינו את הקוד שברשותכם: </h3>
+              <span> <button>הפעל </button> <input type="text"   dir="rtl" /> </span>
 
             </div>
-
             <div className={styles.payment}>
               <h1> בחירת אמצעי תשלום</h1>
 
