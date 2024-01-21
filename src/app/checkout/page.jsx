@@ -175,15 +175,15 @@ function checkout() {
 
             </div>
 
-            <div className={styles.card} style={Dropdown == 2 ? { maxHeight: "300px" } : { maxHeight: "67px" }} >
-              <button className={styles.hearder} onClick={() => setDropdown(Dropdown == 2 ? 0 : 2)}>
-                <svg style={Dropdown == 2 ? { transform: 'rotate(180deg)' } : {}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <div className={styles.card} style={Dropdown == 1 ? { maxHeight: "300px" } : { maxHeight: "67px" }} >
+              <button className={styles.hearder} onClick={() => setDropdown(Dropdown == 1 ? 0 : 1)}>
+                <svg style={Dropdown == 1 ? { transform: 'rotate(180deg)' } : {}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.0625 8C1.0625 11.831 4.16825 14.9375 8 14.9375C11.831 14.9375 14.9375 11.831 14.9375 8C14.9375 4.169 11.831 1.0625 8 1.0625C4.16825 1.0625 1.0625 4.169 1.0625 8Z" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   <path d="M5.39648 6.91821L7.99973 9.53271L10.603 6.91821" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <div>
-                  <h1> נצלו הסכום שצברת </h1>
-                  <p style={Dropdown == 2 ? { opacity: "1" } : { opacity: "0" }}> <span> ₪ 189.00</span>  צברת </p>
+                  <h1> ?יש לך קוד הנחה\קופון   </h1>
+                  <p style={Dropdown == 1 ? { opacity: "1" } : { opacity: "0" }}> <span> ₪ 189.00</span>  צברת </p>
                 </div>
               </button>
 
