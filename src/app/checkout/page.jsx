@@ -29,7 +29,7 @@ function checkout() {
           <card className={styles.price_card}>
             <h2>סה"כ </h2>
             <span>₪ {cartItems.reduce((sum,item)=>sum + parseInt(item.price) ,0)}</span>
-            <p>את קודי הנחות וניצול צבירה ניתן להכניס בעמוד התשלום</p>
+            {/* <p>את קודי הנחות וניצול צבירה ניתן להכניס בעמוד התשלום</p> */}
             <button> םולשתל</button>
           </card>
 
