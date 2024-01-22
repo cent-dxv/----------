@@ -39,8 +39,7 @@ function checkout() {
               <section  key= {index} >
                 <div className={styles.hearder}>
                   <button className={styles.delet_btn} onClick={()=>{removeItemFromCart(item.id)}}>
-                    
-                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
                     <path d="M10.2722 5.52295C10.2722 5.52295 9.95547 9.4517 9.77172 11.1066C9.68422 11.897 9.19597 12.3602 8.39622 12.3748C6.87431 12.4022 5.35064 12.4039 3.82931 12.3719C3.05989 12.3561 2.57981 11.8871 2.49406 11.1107C2.30914 9.4412 1.99414 5.52295 1.99414 5.52295" stroke="#1C2135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M11.0797 3.63981H1.1875" stroke="#1C2135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M9.17383 3.63974C8.71592 3.63974 8.32158 3.31599 8.23175 2.86741L8.09 2.15808C8.0025 1.83083 7.70617 1.60449 7.36842 1.60449H4.89917C4.56142 1.60449 4.26508 1.83083 4.17758 2.15808L4.03583 2.86741C3.946 3.31599 3.55167 3.63974 3.09375 3.63974" stroke="#1C2135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -112,7 +111,7 @@ function checkout() {
                       return (
 
                         <SwiperSlide key={index}>
-                          <button onClick={() => { updateItem(item.id, month) }} style={selected ? { border: "3px solid #FF5E3B", borderRadius: "16px" } : {}}>
+                          <button className={styles.cart_btn} onClick={() => { updateItem(item.id, month) }} style={selected ? { border: "3px solid #FF5E3B", borderRadius: "16px" } : {}}>
 
                             <card >
                               <div className={styles.course_img}>
@@ -156,7 +155,7 @@ function checkout() {
 
 
 
-            <div className={styles.card} style={ Dropdown.includes(1) ? { maxHeight: "300px" } : { maxHeight: "70px" }} >
+            <div className={styles.card} style={ Dropdown.includes(1) ? { maxHeight: "300px" } : { maxHeight: "71px" }} >
               <button className={styles.hearder} onClick={() => setDropdown(Dropdown.includes(1) ? Dropdown.filter(item => item !== 1) : [...Dropdown, 1])}>
                 <svg style={Dropdown.includes(1) ? { transform: 'rotate(180deg)' } : {}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.0625 8C1.0625 11.831 4.16825 14.9375 8 14.9375C11.831 14.9375 14.9375 11.831 14.9375 8C14.9375 4.169 11.831 1.0625 8 1.0625C4.16825 1.0625 1.0625 4.169 1.0625 8Z" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -176,7 +175,7 @@ function checkout() {
             </div>
 
 
-            <div className={styles.card} style={  Dropdown.includes(2) ? { maxHeight: "300px" } : { maxHeight: "70px" }} >
+            <div className={styles.card} style={  Dropdown.includes(2) ? { maxHeight: "300px" } : { maxHeight: "71px" }} >
               <button className={styles.hearder} onClick={() => setDropdown(Dropdown.includes(2) ? Dropdown.filter(item => item !== 2) : [...Dropdown, 2])}>
                 <svg style={Dropdown.includes(2) ? { transform: 'rotate(180deg)' } : {}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.0625 8C1.0625 11.831 4.16825 14.9375 8 14.9375C11.831 14.9375 14.9375 11.831 14.9375 8C14.9375 4.169 11.831 1.0625 8 1.0625C4.16825 1.0625 1.0625 4.169 1.0625 8Z" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />

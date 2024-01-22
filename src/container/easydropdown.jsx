@@ -1,15 +1,18 @@
 // components/Dropdown.js
 
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import styles from '@/styles/container/drop.module.scss';
-
+import { CartContext } from '@/context'
 import Image from 'next/image'
+import Link from 'next/link'
+
 
 const EasyDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { cartItems, updateItem, addItemToCart, removeItemFromCart, clearCart } = useContext(CartContext);
 
   return (
-    <div className={`${styles.dropdownContainer} ${isOpen ? styles.active : ''}`}     
+    <div className={`${styles.dropdownContainer} ${isOpen ? styles.active : ''}`}
       onMouseEnter={() => { setIsOpen(true) }}
       onMouseLeave={() => { setIsOpen(false) }}
     >
@@ -26,7 +29,7 @@ const EasyDropdown = () => {
               src="https://xsgames.co/randomusers/avatar.php?g=female"
               width={2250}
               height={1390}
-              // layout="responsive"
+            // layout="responsive"
             />
           </p>
         </div>
@@ -39,26 +42,28 @@ const EasyDropdown = () => {
                 width={20}
                 height={20}
                 src="/icons/play.svg"
-                
+
               />
             </p>
           </li>
 
           <li className={styles.cart}>
+            <Link href="/checkout" style={{marginLeft: "5px"}}>
               <span className={styles.cart_amount}>
-                8
+                {cartItems.length}
               </span>
-            <span>
-            <p> תוינק לס</p>
-            <p>
-              <Image
-                width={20}
-                height={20}
-                src="/icons/iconly-light-buy.svg"
-                
-              />
-            </p>
-            </span>
+              <span>
+                <p> תוינק לס</p>
+                <p>
+                  <Image
+                    width={20}
+                    height={20}
+                    src="/icons/iconly-light-buy.svg"
+
+                  />
+                </p>
+              </span>
+            </Link>
           </li>
 
           <li>
@@ -68,7 +73,7 @@ const EasyDropdown = () => {
                 width={20}
                 height={20}
                 src="/icons/iconly-light-heart-1.svg"
-                
+
               />
             </p>
           </li>
@@ -81,7 +86,7 @@ const EasyDropdown = () => {
                 width={20}
                 height={20}
                 src="/icons/iconly-light-3-user.svg"
-                
+
               />
             </p>
           </li>
@@ -96,12 +101,12 @@ const EasyDropdown = () => {
                 width={20}
                 height={20}
                 src="/icons/iconly-light-edit-1.svg"
-                
+
               />
             </p>
           </li>
 
-          
+
           <li>
             <p>  םירבחל יתצלמהש םיסרוק </p>
             <p>
@@ -109,7 +114,7 @@ const EasyDropdown = () => {
                 width={20}
                 height={20}
                 src="/icons/iconly-light-wallet-1.svg"
-                
+
               />
             </p>
           </li>
@@ -121,10 +126,10 @@ const EasyDropdown = () => {
             <p className={styles.logout}> תוקתנתה </p>
             <p>
               <Image
-                width={20} 
+                width={20}
                 height={20}
                 src="/icons/iconly-light-logout-1.svg"
-              
+
               />
             </p>
           </li>

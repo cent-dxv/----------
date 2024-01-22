@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Button, Drawer, Radio, Space } from 'antd';
 
 
 import styles from '@/styles/container/drop.module.scss'
 import Image from 'next/image'
+import { CartContext } from '@/context'
+import Link from 'next/link'
 
 const Drawer_component = ({ open, setOpen }) => {
 
+
+  const { cartItems, updateItem, addItemToCart, removeItemFromCart, clearCart } = useContext(CartContext);
 
 
 
@@ -54,11 +58,15 @@ const Drawer_component = ({ open, setOpen }) => {
           </li>
 
           <li className={styles.cart}>
-            <span className={styles.cart_amount}>
-              8
+            <Link href="/checkout">
+            <span>
+            <span style={{marginLeft:"0"}} className={styles.cart_amount}>
+              {cartItems.length}
+            </span>
+              <p style={{marginLeft:"10px"}}> תוינק לס</p>
+
             </span>
             <span>
-              <p> תוינק לס</p>
               <p>
                 <Image
                   width={20}
@@ -68,6 +76,7 @@ const Drawer_component = ({ open, setOpen }) => {
                 />
               </p>
             </span>
+            </Link>
           </li>
 
           <li>

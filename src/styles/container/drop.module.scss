@@ -55,7 +55,7 @@
   padding-top: 5px;
   filter: drop-shadow(0px 0px 40px #dee8f1);
   z-index: 50;
-  top: 5px; 
+  top: 5px;
   width: 250px;
   border-radius: 16px;
   background: #fff;
@@ -116,27 +116,33 @@
   }
   ul {
     margin-top: 20px;
-    .cart{
+    .cart {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      span{
+      span {
         display: flex;
       }
-      .cart_amount{
-        background: #FFB703;
-        color:#FFF;
+      .cart_amount {
+        background: #ffb703;
+        color: #fff;
         padding: 10px;
         justify-content: center;
         align-items: center;
         width: 20px;
-        height: 20px; 
+        height: 20px;
         border-radius: 4px;
         margin-left: 15px;
       }
     }
   }
   li {
+    a {
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
     display: flex;
     // display: block;
     justify-content: end;
@@ -145,10 +151,10 @@
     text-decoration: none;
     color: #333;
     text-align: right;
-    .logout{
-      color:#FF5B37
+    .logout {
+      color: #ff5b37;
     }
-    img{
+    img {
       margin-left: 10px;
     }
   }
@@ -161,7 +167,6 @@
   max-height: 500px; /* Adjust the max height as needed */
 }
 
-
 // @media (max-width: 700px) {
 
 //   .dropdownContent{
@@ -169,28 +174,34 @@
 //   }
 // }
 
-
-.drawer_container{
-  .drawer{ 
+.drawer_container {
+  .drawer {
     display: flex;
     justify-content: space-between;
   }
 
-  .name ,.email{
-
+  .name,
+  .email {
     font-size: 24px;
   }
-  li{
+  li {
+    a {
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      color: black;
+    }
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
   }
 
-  img{
+  img {
     width: 25px;
     height: 25px;
   }
-  .avatar{
+  .avatar {
     img {
       vertical-align: middle;
       width: 50px;
@@ -200,24 +211,23 @@
     }
   }
 
-  .cart{
+  .cart {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    span{
+    span {
       display: flex;
     }
-    .cart_amount{
-      background: #FFB703;
-      color:#FFF;
+    .cart_amount {
+      background: #ffb703;
+      color: #fff;
       padding: 10px;
       justify-content: center;
       align-items: center;
       width: 20px;
-      height: 20px; 
+      height: 20px;
       border-radius: 4px;
       margin-left: 15px;
     }
   }
 }
-
