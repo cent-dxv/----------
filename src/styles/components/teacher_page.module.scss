@@ -10,9 +10,13 @@
     flex-wrap: wrap-reverse;
   }
 
-  @media (max-width: 951px) {
+  @media (max-width: 951px)   {
     height: 520px;
     padding: 0 20px;
+  }
+  @media (min-width: 1150px)   {
+    height: 520px;
+    // padding: 0 20px;
   }
 
 
@@ -30,17 +34,26 @@
     color: #fff;
     margin: 50px 20px;
     position: relative;
+    @media (min-width: 1150px)   {
+      max-width: 750px;
+    }
     span {
       margin-bottom: 15px;
       text-align: right;
       @media (max-width: 760px) {
         text-align: center !important;
       }
+      @media (min-width: 1150px)   {
+        margin-bottom: 25px;
+      }
       h1 {
         font-size: 58px;
         font-style: normal;
         font-weight: 700;
         line-height: 64px; /* 100% */
+        @media (min-width: 1150px)   {
+          font-size: 64px;
+        }
       }
       p {
         color: #9fa4b9;
@@ -51,6 +64,10 @@
         @media (max-width: 760px) {
           text-align: center !important;
         }
+        @media (min-width: 1150px)   {
+          font-size: 30px;
+          line-height: 30px; /* 80% */
+        }  
       }
     }
     h3 {
@@ -62,6 +79,10 @@
       line-height: 40px; /* 133.333% */
       @media (max-width: 760px) {
         text-align: center ;
+      }
+      @media (min-width: 1150px)   {
+        font-size: 30px;
+        margin-bottom: 10px;
       }
     }
     p {
@@ -78,6 +99,9 @@
       @media (max-width: 1000px) {
         font-size: 12px;
       }
+      @media (min-width: 1150px)   {
+        font-size: 16px;
+      }
     }
 
     section {
@@ -93,6 +117,10 @@
         margin-top: 10px;
         padding-bottom: 10px;
       }
+      @media (min-width: 1150px)   {
+        margin-top: 25px;
+        padding-bottom: 20px;
+      }
 
       div {
         display: flex;
@@ -103,6 +131,9 @@
         @media (max-width: 950px) {
           flex-wrap: wrap-reverse;
           padding: 8px 5px 5px 5px;
+        }
+        @media (min-width: 1150px)   {
+          padding: 20px 20px 10px 20px;
         }
 
         button {
@@ -125,6 +156,9 @@
           @media (max-width: 950px) {
             margin-bottom: 8px ;
           }
+          @media (min-width: 1150px)   {
+            height: 50px;
+          }
         }
         p {
           text-align: center;
@@ -137,6 +171,9 @@
           margin: 0 3px;
           @media (max-width: 950px) {
             margin: 10px 0 ;
+          }
+          @media (min-width: 1150px)   {
+            width: 70%;
           }
         }
       }
@@ -154,6 +191,10 @@
         height: 50px;
         flex-shrink: 0;
         margin: auto;
+        @media (min-width: 1150px)   {
+          height: 60px;
+          width: 250px;
+        }
       }
     }
   }
@@ -170,6 +211,10 @@
       width: 310px;
       height: 480px;
     }
+    @media (min-width: 1150px)   {
+      width: 378px;
+      height: 495px;
+    }
 
     img {
       border-radius: 16px;
@@ -183,6 +228,11 @@
   margin: 100px 30px;
   @media (max-width: 768px) {
     margin: 50px 10px;
+  }
+
+  div{
+    max-width: 800px;
+    margin: auto;
   }
 }
 
