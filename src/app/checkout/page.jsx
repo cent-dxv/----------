@@ -3,7 +3,7 @@
 import Navbar from '@/src/components/navbar_2'
 import React, { useContext, useState } from 'react'
 
-import styles from '@/styles/components/shoping.module.scss'
+import styles from '@/styles/components/checkout.module.scss'
 import Image from 'next/image'
 import Footer from '@/src/components/footer'
 
@@ -54,7 +54,8 @@ function checkout() {
                 </div>
 
                 <div className={styles.course_list}>
-                  <Swiper navigation={true}
+                  <Swiper 
+                  // navigation={true}
                     // slidesPerView={2.5}
                     // initialSlide={2}
                     // centeredSlides={true}

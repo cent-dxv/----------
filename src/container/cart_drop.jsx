@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect, useContext } from 'react';
 import styles from '@/styles/components/navbar.module.scss';
 
 import Image from 'next/image'
+import Link from 'next/link'
+
 import { CartContext } from '../app/contextApi';
 
 
@@ -111,8 +113,10 @@ const Cart_Dropdown = ({ children, content, arrow }) => {
               <div className={styles.horizontal_divider}></div>
 
               <div className={styles.action_btn}>
-                <button>צפייה בסל</button>
-                <button>לתשלום</button>
+              <Link href="/checkout"> 
+                <button >צפייה בסל</button>
+                </Link>
+                {/* <button>לתשלום</button> */}
               </div>
             </div>)}
 
