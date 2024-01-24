@@ -1,14 +1,15 @@
 import React, { useContext } from 'react'
 import styles from '@/styles/components/course_detail_page.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 import { CartContext } from '../../contextApi';
 
 
 
 
-function Aside({data}) {
-  
-  
+function Aside({ data }) {
+
+
   const { cartItems, addItemToCart, removeItemFromCart, clearCart } = useContext(CartContext);
 
 
@@ -19,21 +20,21 @@ function Aside({data}) {
         ₪ 185.00 -  החל מ
       </p>
 
-      <button className={styles.action_btn} onClick={()=>{  
-       addItemToCart(data);
-        }   }>
+      <button className={styles.action_btn} onClick={() => {
+        addItemToCart(data);
+      }}>
 
-          <p>
-            תוינק לסל ףסוה
-          </p>
-          <div className={styles.cart} >
+        <p>
+          תוינק לסל ףסוה
+        </p>
+        <div className={styles.cart} >
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M5.1855 14.7651C5.53716 14.7651 5.823 15.051 5.823 15.4026C5.823 15.7543 5.53716 16.0393 5.1855 16.0393C4.83383 16.0393 4.54883 15.7543 4.54883 15.4026C4.54883 15.051 4.83383 14.7651 5.1855 14.7651Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5623 14.7651C14.914 14.7651 15.1998 15.051 15.1998 15.4026C15.1998 15.7543 14.914 16.0393 14.5623 16.0393C14.2106 16.0393 13.9248 15.7543 13.9248 15.4026C13.9248 15.051 14.2106 14.7651 14.5623 14.7651Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M1.29199 0.956543L3.02533 1.25654L3.82783 10.8174C3.89283 11.5965 4.54366 12.1949 5.32533 12.1949H14.4187C15.1653 12.1949 15.7987 11.6465 15.9062 10.9065L16.697 5.44154C16.7945 4.76738 16.272 4.16404 15.5912 4.16404H3.30366" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M10.7715 7.24406H13.0823" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-          </div>
+        </div>
 
       </button>
 
@@ -74,21 +75,24 @@ function Aside({data}) {
       <div className={styles.lecturare}>
 
         <h3>מרצה הקורס:</h3>
-        <div className={styles.lecturare_info}>
-          <div className={styles.lecturare_name}>
-            <p>  מרצה הקורס:</p>
-            <p> הקיטמתמב ריכב הצרמ</p>
+        <Link href='/teacher/ארז כהן' style={{textDecoration:"none"}}>
+          <div className={styles.lecturare_info}>
+            <div className={styles.lecturare_name}>
+              <p>   ארז כהן </p>
+              <p> הקיטמתמב ריכב הצרמ</p>
+            </div>
+            <div className={styles.avatar}>
+              <Image
+                alt="AV"
+                src="https://xsgames.co/randomusers/avatar.php?g=male"
+                width={2250}
+                height={1390}
+              // layout="responsive"
+              />
+            </div>
           </div>
-          <div className={styles.avatar}>
-            <Image
-              alt="AV"
-              src="https://xsgames.co/randomusers/avatar.php?g=male"
-              width={2250}
-              height={1390}
-            // layout="responsive"
-            />
-          </div>
-        </div>
+        </Link>
+
       </div>
 
 

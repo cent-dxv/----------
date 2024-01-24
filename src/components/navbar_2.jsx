@@ -80,7 +80,7 @@ function Navbar() {
 
             <div className={style_navbar.nav_bar_link} style={{ display: 'flex', alignItems: "center", "margin-top": "8px" }}>
               <Link href="#"> קביעת שיעור פרטי </Link>
-              <Link href="#"> המליצו ותרוויחו </Link>
+              <Link href="/affiliates"> המליצו ותרוויחו </Link>
               <Link href="/">ראשי</Link>
             </div>
 

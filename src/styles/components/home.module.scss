@@ -296,6 +296,11 @@
 
 .courses {
   // margin-top: 80px;
+  @media (min-width : 910px){
+
+    height: 570px;
+  }
+  
   width: 100%;
   @media (max-width: 650px) {
     margin-top: 0px;
