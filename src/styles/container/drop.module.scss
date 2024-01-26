@@ -178,11 +178,16 @@
   .drawer {
     display: flex;
     justify-content: space-between;
+    div{
+      width: 80%;
+    }
   }
 
   .name,
   .email {
     font-size: 24px;
+    text-align: end;
+
   }
   li {
     color: #1c2135;
