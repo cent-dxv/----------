@@ -47,14 +47,14 @@ const Drawer_component = ({ open, setOpen }) => {
         <ul>
           <li>
             <p> ילש םיסרוק</p>
-            <p>
+        
               <Image
                 width={20}
                 height={20}
                 src="/icons/play.svg"
 
               />
-            </p>
+        
           </li>
 
           <li className={styles.cart}>
@@ -63,10 +63,10 @@ const Drawer_component = ({ open, setOpen }) => {
             <span style={{marginLeft:"0"}} className={styles.cart_amount}>
               {cartItems.length}
             </span>
-              <p style={{marginLeft:"10px"}}> תוינק לס</p>
 
             </span>
             <span>
+              <p > תוינק לס</p>
               <p>
                 <Image
                   width={20}
