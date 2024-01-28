@@ -52,7 +52,7 @@ function page() {
             <Image
               className={styles.image_3}
               alt="GF"
-              src="/images/register/ellipse-42.svg"
+              src="/images/register/ellipse-42.png"
               width={1000}
               height={1000}
             // layout="responsive"
