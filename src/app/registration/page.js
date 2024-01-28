@@ -26,7 +26,7 @@ function page() {
             <Image
               className={styles.image_1}
               alt="GF"
-              src="/images/register/ellipse-46.png"
+              src="/images/register/ellipse-46.svg"
               width={1000}
               height={1000}
             // layout="responsive"
@@ -39,7 +39,7 @@ function page() {
               className={styles.image_2}
 
               alt="GF"
-              src="/images/register/ellipse-45.png"
+              src="/images/register/ellipse-45.svg"
               width={1000}
               height={1000}
             // layout="responsive"
