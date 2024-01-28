@@ -65,7 +65,7 @@ function page() {
               className={styles.image_4}
 
               alt="GF"
-              src="/images/register/ellipse-41.svg"
+              src="/images/register/ellipse-41.png"
               width={1000}
               height={1000}
             // layout="responsive"
