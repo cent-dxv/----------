@@ -50,6 +50,8 @@ function Navbar() {
 
 
                 <Image
+                  loading="lazy"
+
                   // className={`${style_navbar.jhkh}`}
                   style={{ "margin-left": "5px" }}
                   width={30}
@@ -92,6 +94,8 @@ function Navbar() {
 
               <button className={`${style_navbar.drawer}`} onClick={() => setOpen(true)}>
                 <Image
+                  loading="lazy"
+
                   width={41}
                   height={41}
                   src="/icons/drawer.svg"
@@ -106,6 +110,8 @@ function Navbar() {
 
 
                   <Image
+                    loading="lazy"
+
                     // className={`${style_navbar.jhkh}`}
                     style={{ "margin-left": "5px" }}
                     width={30}
@@ -129,6 +135,8 @@ function Navbar() {
 
             <Link href="/" className={`${style_navbar.logo}`}>
               <Image
+                loading="lazy"
+
                 fill
                 src="/favicon.png"
                 objectFit='contain'
@@ -149,6 +157,8 @@ function Navbar() {
                 <div className={style_navbar.items} onClick={() => setDropdown(!open_Dropdown)}>
 
                   <Image
+                    loading="lazy"
+
                     src='/icons/arrow-down-2.svg'
                     width={16}
                     height={16}
@@ -172,6 +182,8 @@ function Navbar() {
                       <Link href={"/קורסים פופולאריים/אקדמיה"}>
                         <h2> קורסים פופולאריים
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -190,6 +202,8 @@ function Navbar() {
                         <h2>
                           טכניון
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -197,7 +211,7 @@ function Navbar() {
                           />
                         </h2>
                       </Link>
-     
+
 
                       <Link href={"/אוניברסיטת חיפה/טכניון/אקדמיה"}> <p>אוניברסיטת חיפה</p> </Link>
                       <Link href={"/המכללה האקדמית תל חי/טכניון/אקדמיה"}> <p>המכללה האקדמית תל חי</p> </Link>
@@ -206,6 +220,8 @@ function Navbar() {
                       <Link href={"/תחום לימוד/אקדמיה"}>
                         <h2>  תחום לימוד
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -219,6 +235,8 @@ function Navbar() {
 
                         <h2> מתמטיקה
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -248,6 +266,8 @@ function Navbar() {
                       <Link href={"/קורסים פופולאריים/מכינות "}>
                         <h2> קורסים פופולאריים
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -266,6 +286,8 @@ function Navbar() {
                         <h2>
                           טכניון
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -273,7 +295,7 @@ function Navbar() {
                           />
                         </h2>
                       </Link>
-          
+
 
                       <Link href={"/אוניברסיטת חיפה/טכניון/מכינות"}> <p>אוניברסיטת חיפה</p> </Link>
                       <Link href={"/המכללה האקדמית תל חי/טכניון/מכינות"}> <p>המכללה האקדמית תל חי</p> </Link>
@@ -282,6 +304,8 @@ function Navbar() {
                       <Link href={"/תחום לימוד/מכינות"}>
                         <h2>  תחום לימוד
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -289,13 +313,15 @@ function Navbar() {
                           />
                         </h2>
                       </Link>
-                      <Link href={"/פיסיקה/תחום לימוד/מכינות"}> <p>פיסיקה </p> </Link> 
+                      <Link href={"/פיסיקה/תחום לימוד/מכינות"}> <p>פיסיקה </p> </Link>
 
 
                       <Link href={"/מתמטיקה/מכינות"}>
 
                         <h2> מתמטיקה
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -303,7 +329,7 @@ function Navbar() {
                           />
                         </h2>
                       </Link>
-                      <Link href={"/אנגלית/מתמטיקה/מכינות"}> <p> אנגלית </p> </Link> 
+                      <Link href={"/אנגלית/מתמטיקה/מכינות"}> <p> אנגלית </p> </Link>
 
                     </div>
                   </div>
@@ -324,6 +350,8 @@ function Navbar() {
                       <Link href={"/קורסים פופולאריים/בגרויות במתמטיקה"}>
                         <h2> קורסים פופולאריים
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -342,6 +370,8 @@ function Navbar() {
                         <h2>
                           טכניון
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -349,7 +379,7 @@ function Navbar() {
                           />
                         </h2>
                       </Link>
-     
+
                       <Link href={"/אוניברסיטת חיפה/טכניון/בגרויות במתמטיקה"}> <p>אוניברסיטת חיפה</p> </Link>
                       <Link href={"/המכללה האקדמית תל חי/טכניון/בגרויות במתמטיקה"}> <p>המכללה האקדמית תל חי</p> </Link>
                       <Link href={"/המכללה האקדמית אורט בראודה/טכניון/בגרויות במתמטיקה"}> <p>המכללה האקדמית אורט בראודה</p> </Link>
@@ -357,6 +387,8 @@ function Navbar() {
                       <Link href={"/תחום לימוד/בגרויות במתמטיקה"}>
                         <h2>  תחום לימוד
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -364,12 +396,14 @@ function Navbar() {
                           />
                         </h2>
                       </Link>
-                      <Link href={"/פיסיקה/תחום לימוד/בגרויות במתמטיקה"}> <p>פיסיקה </p> </Link> 
+                      <Link href={"/פיסיקה/תחום לימוד/בגרויות במתמטיקה"}> <p>פיסיקה </p> </Link>
 
 
                       <Link href={"/מתמטיקה/בגרויות במתמטיקה"}>
                         <h2> מתמטיקה
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -377,8 +411,8 @@ function Navbar() {
                           />
                         </h2>
                       </Link>
-                    
-                      <Link href={"/אנגלית/מתמטיקה/בגרויות במתמטיקה"}>  <p> אנגלית </p> </Link> 
+
+                      <Link href={"/אנגלית/מתמטיקה/בגרויות במתמטיקה"}>  <p> אנגלית </p> </Link>
 
                     </div>
                   </div>

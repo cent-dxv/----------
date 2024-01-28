@@ -9,7 +9,7 @@ import CustomSwiper from '@/src/container/swiper';
 import result_data from "../../../../../mok_data"
 
 export default function Categories({ params }) {
-  console.log( "\n" *5 , "===" *10 , decodeURIComponent(params.title)  , decodeURIComponent(params.categories),  "===" *10 , "\n" *5 ,  )
+  console.log("\n" * 5, "===" * 10, decodeURIComponent(params.title), decodeURIComponent(params.categories), "===" * 10, "\n" * 5,)
   return (
     <>
       <div className={``}>
@@ -20,6 +20,8 @@ export default function Categories({ params }) {
 
             <div className={styles.line}>
               <Image
+                loading="lazy"
+
                 src="/images/background/line.png"
                 fill
                 object-fit="contain"
@@ -28,6 +30,8 @@ export default function Categories({ params }) {
 
             <div className={styles.dot_background_1}>
               <Image
+                loading="lazy"
+
                 src="/images/background/dot_background.png"
                 fill
                 object-fit="contain"
@@ -39,6 +43,8 @@ export default function Categories({ params }) {
 
             <div className={styles.dot_background_2}>
               <Image
+                loading="lazy"
+
                 src="/images/background/dot_background.png"
                 fill
                 object-fit="contain"
@@ -50,6 +56,8 @@ export default function Categories({ params }) {
 
             <div className={styles.dot_background_3}>
               <Image
+                loading="lazy"
+
                 src="/images/background/dot_background.png"
                 fill
                 object-fit="contain"
@@ -99,6 +107,8 @@ export default function Categories({ params }) {
 
             <div className={styles.red_line}>
               <Image
+                loading="lazy"
+
                 src="/images/background/red_line.png"
                 fill
                 object-fit="contain"

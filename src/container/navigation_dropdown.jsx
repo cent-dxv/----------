@@ -21,6 +21,8 @@ const Navigation_dropdown = ({ isOpen, setIsOpen }) => {
         >
           <button className={styles.dropdown__btn}>
             <Image
+              loading="lazy"
+
               src='/icons/arrow-down-2.svg'
               width={12}
               height={12}
@@ -46,6 +48,8 @@ const Navigation_dropdown = ({ isOpen, setIsOpen }) => {
         >
           <button className={styles.dropdown__btn}>
             <Image
+              loading="lazy"
+
               src='/icons/arrow-down-2.svg'
               width={12}
               height={12}
@@ -68,6 +72,8 @@ const Navigation_dropdown = ({ isOpen, setIsOpen }) => {
         >
           <button className={styles.dropdown__btn}>
             <Image
+              loading="lazy"
+
               src='/icons/arrow-down-2.svg'
               width={12}
               height={12}

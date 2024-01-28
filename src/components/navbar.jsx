@@ -53,6 +53,8 @@ function Navbar({ }) {
                   <div className={style_navbar.placeholder}></div>
 
                   <Image
+                    loading="lazy"
+
                     // className={`${style_navbar.jhkh}`}
                     style={{ "margin-left": "5px" }}
                     width={30}
@@ -85,7 +87,7 @@ function Navbar({ }) {
           <div className={style_navbar.top_nav_drawer} style={{ display: 'flex', alignItems: "center" }} >
 
             <div className={style_navbar.nav_bar_link} style={{ display: 'flex', alignItems: "center", "margin-top": "8px" }}>
-            <Link href="#"> קביעת שיעור פרטי </Link>
+              <Link href="#"> קביעת שיעור פרטי </Link>
               <Link href="/affiliates"> המליצו ותרוויחו </Link>
               <Link href="/">ראשי</Link>
             </div>
@@ -98,6 +100,8 @@ function Navbar({ }) {
 
               <button className={`${style_navbar.drawer}`} onClick={() => setOpen(true)}>
                 <Image
+                  loading="lazy"
+
                   width={41}
                   height={41}
                   src="/icons/drawer.svg"
@@ -112,6 +116,8 @@ function Navbar({ }) {
 
 
                   <Image
+                    loading="lazy"
+
                     // className={`${style_navbar.jhkh}`}
                     style={{ "margin-left": "5px" }}
                     width={30}
@@ -135,6 +141,8 @@ function Navbar({ }) {
 
             <Link href="/" className={`${style_navbar.logo}`}>
               <Image
+                loading="lazy"
+
                 fill
                 src="/favicon.png"
                 objectFit='contain'
@@ -155,6 +163,8 @@ function Navbar({ }) {
                 <div className={style_navbar.items} onClick={() => setDropdown(!open_Dropdown)}>
 
                   <Image
+                    loading="lazy"
+
                     src='/icons/arrow-down-2.svg'
                     width={16}
                     height={16}
@@ -179,6 +189,8 @@ function Navbar({ }) {
                       <Link href={"/קורסים פופולאריים/אקדמיה"}>
                         <h2> קורסים פופולאריים
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -197,6 +209,8 @@ function Navbar({ }) {
                         <h2>
                           טכניון
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -213,6 +227,8 @@ function Navbar({ }) {
                       <Link href={"/תחום לימוד/אקדמיה"}>
                         <h2>  תחום לימוד
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -226,6 +242,8 @@ function Navbar({ }) {
 
                         <h2> מתמטיקה
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -255,6 +273,8 @@ function Navbar({ }) {
                       <Link href={"/קורסים פופולאריים/מכינות "}>
                         <h2> קורסים פופולאריים
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -273,6 +293,8 @@ function Navbar({ }) {
                         <h2>
                           טכניון
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -289,6 +311,8 @@ function Navbar({ }) {
                       <Link href={"/תחום לימוד/מכינות"}>
                         <h2>  תחום לימוד
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -303,6 +327,8 @@ function Navbar({ }) {
 
                         <h2> מתמטיקה
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -331,6 +357,8 @@ function Navbar({ }) {
                       <Link href={"/קורסים פופולאריים/בגרויות במתמטיקה"}>
                         <h2> קורסים פופולאריים
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -349,6 +377,8 @@ function Navbar({ }) {
                         <h2>
                           טכניון
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -364,6 +394,8 @@ function Navbar({ }) {
                       <Link href={"/תחום לימוד/בגרויות במתמטיקה"}>
                         <h2>  תחום לימוד
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"
@@ -377,6 +409,8 @@ function Navbar({ }) {
                       <Link href={"/מתמטיקה/בגרויות במתמטיקה"}>
                         <h2> מתמטיקה
                           <Image
+                            loading="lazy"
+
                             width={10}
                             height={10}
                             src="/icons/arrow-left.svg"

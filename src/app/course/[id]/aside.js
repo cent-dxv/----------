@@ -75,7 +75,7 @@ function Aside({ data }) {
       <div className={styles.lecturare}>
 
         <h3>מרצה הקורס:</h3>
-        <Link href='/teacher/ארז כהן' style={{textDecoration:"none"}}>
+        <Link href='/teacher/ארז כהן' style={{ textDecoration: "none" }}>
           <div className={styles.lecturare_info}>
             <div className={styles.lecturare_name}>
               <p>   ארז כהן </p>
@@ -83,6 +83,8 @@ function Aside({ data }) {
             </div>
             <div className={styles.avatar}>
               <Image
+                loading="lazy"
+
                 alt="AV"
                 src="https://xsgames.co/randomusers/avatar.php?g=male"
                 width={2250}

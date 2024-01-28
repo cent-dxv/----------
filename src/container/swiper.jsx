@@ -65,6 +65,8 @@ export default ({ data }) => {
               <button className={styles.nav_prev} onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>
                 <p>
                   <Image
+                    loading="lazy"
+
                     width={15}
                     height={15}
                     src="/icons/arrow-right-2.svg"
@@ -75,6 +77,8 @@ export default ({ data }) => {
               <button className={styles.nav_next} onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage === totalPages}>
                 <p>
                   <Image
+                    loading="lazy"
+
                     width={15}
                     height={15}
                     src="/icons/next_arrow.svg"
@@ -94,18 +98,18 @@ export default ({ data }) => {
             modules={[Navigation, Scrollbar, A11y]}
             spaceBetween={10}
             slidesPerView={preview}
-            onSwiper={(swiper) => {}}
+            onSwiper={(swiper) => { }}
             onSlideChange={() => console.log('slide change')}
             ref={swiperRef1}
-          
-            
+
+
           >
 
-{/* <Link href="/course/[id]" as={`/course/${id}`}></Link> */}
+            {/* <Link href="/course/[id]" as={`/course/${id}`}></Link> */}
 
             {data.map((items) => {
               // console.log(items)
-              return (  <SwiperSlide> <Card items_data={items} /></SwiperSlide> )
+              return (<SwiperSlide> <Card items_data={items} /></SwiperSlide>)
             })}
 
           </Swiper>)
@@ -114,6 +118,8 @@ export default ({ data }) => {
         <div className={`${styles.button_next} button_next1`} onClick={goNext1}>
           <p>
             <Image
+              loading="lazy"
+
               width={15}
               height={15}
               src="/icons/next_arrow.svg"
@@ -123,6 +129,8 @@ export default ({ data }) => {
         <div className={`${styles.button_prev} button_prev1`} onClick={goPrev1}>
           <p>
             <Image
+              loading="lazy"
+
               width={15}
               height={15}
               src="/icons/arrow-right-2.svg"

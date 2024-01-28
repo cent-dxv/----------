@@ -25,6 +25,8 @@ const EasyDropdown = () => {
           </div>
           <p className={styles.avatar}>
             <Image
+              loading="lazy"
+
               alt="AV"
               src="https://xsgames.co/randomusers/avatar.php?g=female"
               width={2250}
@@ -39,6 +41,8 @@ const EasyDropdown = () => {
             <p> ילש םיסרוק</p>
             <p>
               <Image
+                loading="lazy"
+
                 width={20}
                 height={20}
                 src="/icons/play.svg"
@@ -48,7 +52,7 @@ const EasyDropdown = () => {
           </li>
 
           <li className={styles.cart}>
-            <Link href="/checkout" style={{marginLeft: "5px"}}>
+            <Link href="/checkout" style={{ marginLeft: "5px" }}>
               <span className={styles.cart_amount}>
                 {cartItems.length}
               </span>
@@ -56,6 +60,8 @@ const EasyDropdown = () => {
                 <p> תוינק לס</p>
                 <p>
                   <Image
+                    loading="lazy"
+
                     width={20}
                     height={20}
                     src="/icons/iconly-light-buy.svg"
@@ -70,6 +76,8 @@ const EasyDropdown = () => {
             <p>םיפדעומ </p>
             <p>
               <Image
+                loading="lazy"
+
                 width={20}
                 height={20}
                 src="/icons/iconly-light-heart-1.svg"
@@ -83,6 +91,8 @@ const EasyDropdown = () => {
             <p> םירבחל יתצלמהש םיסרוק </p>
             <p>
               <Image
+                loading="lazy"
+
                 width={20}
                 height={20}
                 src="/icons/iconly-light-3-user.svg"
@@ -98,6 +108,8 @@ const EasyDropdown = () => {
             <p>  םירבחל יתצלמהש םיסרוק </p>
             <p>
               <Image
+                loading="lazy"
+
                 width={20}
                 height={20}
                 src="/icons/iconly-light-edit-1.svg"
@@ -111,6 +123,8 @@ const EasyDropdown = () => {
             <p>  םירבחל יתצלמהש םיסרוק </p>
             <p>
               <Image
+                loading="lazy"
+
                 width={20}
                 height={20}
                 src="/icons/iconly-light-wallet-1.svg"
@@ -126,6 +140,8 @@ const EasyDropdown = () => {
             <p className={styles.logout}> תוקתנתה </p>
             <p>
               <Image
+                loading="lazy"
+
                 width={20}
                 height={20}
                 src="/icons/iconly-light-logout-1.svg"

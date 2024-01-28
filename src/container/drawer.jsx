@@ -26,134 +26,150 @@ const Drawer_component = ({ open, setOpen }) => {
       // key={placement}
       >
 
-<div className={styles.drawer_container}>
+        <div className={styles.drawer_container}>
 
-          <div  className={styles.drawer}>
-          <div>
-            <p className={styles.name}> סייו הילוי</p>
-            <p className={styles.email}>syulia06@gmail.com</p>
-          </div>
-          <p className={styles.avatar}>
-            <Image
-              alt="AV"
-              src="https://xsgames.co/randomusers/avatar.php?g=female"
-              width={2250}
-              height={1390}
-            // layout="responsive"
-            />
-          </p>
-        </div>
-        <div className={styles.horizontalline} ></div>
-        <ul>
-          <li>
-            <p> ילש םיסרוק</p>
-        
+          <div className={styles.drawer}>
+            <div>
+              <p className={styles.name}> סייו הילוי</p>
+              <p className={styles.email}>syulia06@gmail.com</p>
+            </div>
+            <p className={styles.avatar}>
               <Image
+                loading="lazy"
+
+                alt="AV"
+                src="https://xsgames.co/randomusers/avatar.php?g=female"
+                width={2250}
+                height={1390}
+              // layout="responsive"
+              />
+            </p>
+          </div>
+          <div className={styles.horizontalline} ></div>
+          <ul>
+            <li>
+              <p> ילש םיסרוק</p>
+
+              <Image
+                loading="lazy"
+
                 width={20}
                 height={20}
                 src="/icons/play.svg"
 
               />
-        
-          </li>
 
-          <li className={styles.cart}>
-            <Link href="/checkout">
-            <span>
-            <span style={{marginLeft:"0"}} className={styles.cart_amount}>
-              {cartItems.length}
-            </span>
+            </li>
 
-            </span>
-            <span>
-              <p > תוינק לס</p>
+            <li className={styles.cart}>
+              <Link href="/checkout">
+                <span>
+                  <span style={{ marginLeft: "0" }} className={styles.cart_amount}>
+                    {cartItems.length}
+                  </span>
+
+                </span>
+                <span>
+                  <p > תוינק לס</p>
+                  <p>
+                    <Image
+                      loading="lazy"
+
+                      width={20}
+                      height={20}
+                      src="/icons/iconly-light-buy.svg"
+
+                    />
+                  </p>
+                </span>
+              </Link>
+            </li>
+
+            <li>
+              <p>םיפדעומ </p>
               <p>
                 <Image
+                  loading="lazy"
+
                   width={20}
                   height={20}
-                  src="/icons/iconly-light-buy.svg"
+                  src="/icons/iconly-light-heart-1.svg"
 
                 />
               </p>
-            </span>
-            </Link>
-          </li>
-
-          <li>
-            <p>םיפדעומ </p>
-            <p>
-              <Image
-                width={20}
-                height={20}
-                src="/icons/iconly-light-heart-1.svg"
-
-              />
-            </p>
-          </li>
+            </li>
 
 
-          <li>
-            <p> םירבחל יתצלמהש םיסרוק </p>
-            <p>
-              <Image
-                width={20}
-                height={20}
-                src="/icons/iconly-light-3-user.svg"
+            <li>
+              <p> םירבחל יתצלמהש םיסרוק </p>
+              <p>
+                <Image
+                  loading="lazy"
 
-              />
-            </p>
-          </li>
+                  width={20}
+                  height={20}
+                  src="/icons/iconly-light-3-user.svg"
 
-          <div className={styles.horizontalline} ></div>
+                />
+              </p>
+            </li>
 
-
-          <li>
-            <p>  םירבחל יתצלמהש םיסרוק </p>
-            <p>
-              <Image
-                width={20}
-                height={20}
-                src="/icons/iconly-light-edit-1.svg"
-
-              />
-            </p>
-          </li>
+            <div className={styles.horizontalline} ></div>
 
 
-          <li>
-            <p>  םירבחל יתצלמהש םיסרוק </p>
-            <p>
-              <Image
-                width={20}
-                height={20}
-                src="/icons/iconly-light-wallet-1.svg"
+            <li>
+              <p>  םירבחל יתצלמהש םיסרוק </p>
+              <p>
+                <Image
+                  loading="lazy"
 
-              />
-            </p>
-          </li>
+                  width={20}
+                  height={20}
+                  src="/icons/iconly-light-edit-1.svg"
 
-          <div className={styles.horizontalline} ></div>
+                />
+              </p>
+            </li>
 
 
-          <li >
-            <p className={styles.logout}> תוקתנתה </p>
-            <p>
-              <Image
-                width={20}
-                height={20}
-                src="/icons/iconly-light-logout-1.svg"
+            <li>
+              <p>  םירבחל יתצלמהש םיסרוק </p>
+              <p>
+                <Image
+                  loading="lazy"
 
-              />
-            </p>
-          </li>
+                  width={20}
+                  height={20}
+                  src="/icons/iconly-light-wallet-1.svg"
 
-        </ul>
+                />
+              </p>
+            </li>
 
-</div>
+            <div className={styles.horizontalline} ></div>
+
+
+            <li >
+              <p className={styles.logout}> תוקתנתה </p>
+              <p>
+                <Image
+                  loading="lazy"
+
+                  width={20}
+                  height={20}
+                  src="/icons/iconly-light-logout-1.svg"
+
+                />
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
 
 
 
-    </Drawer >
+      </Drawer >
     </>
   );
 };

@@ -27,7 +27,7 @@ const CourseDetailPage = ({ params }) => {
 
       <div className={styles.main}>
 
-        <div className={styles.desktop}> <Aside data = {data} /> </div>
+        <div className={styles.desktop}> <Aside data={data} /> </div>
 
         <div className={styles.course_details}>
           <h1 className={styles.title}>   {data ? data.title : "MOK | מכינת מתמטיקה - סמסטר ראשון"}  </h1>
@@ -96,13 +96,15 @@ const CourseDetailPage = ({ params }) => {
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0.833496 30.0168C0.833496 13.9182 13.9247 0.833252 30.0002 0.833252C46.0756 0.833252 59.1668 13.9182 59.1668 30.0168C59.1668 46.0817 46.0756 59.1666 30.0002 59.1666C13.9247 59.1666 0.833496 46.0817 0.833496 30.0168ZM40.6983 32.9686C41.008 32.6591 41.4022 32.1807 41.4866 32.0682C41.9371 31.4772 42.1623 30.7456 42.1623 30.0168C42.1623 29.1979 41.9089 28.4382 41.4303 27.8191C41.3911 27.7799 41.3143 27.6963 41.2142 27.5873C41.0269 27.3835 40.7581 27.0909 40.5013 26.8342C38.1927 24.3579 32.1679 20.3058 29.0148 19.0677C28.5362 18.8735 27.3256 18.4486 26.6781 18.4205C26.0587 18.4205 25.4675 18.5612 24.9044 18.8426C24.2006 19.2365 23.6375 19.8556 23.3279 20.5872C23.1308 21.0937 22.8211 22.6133 22.8211 22.6414C22.5114 24.3017 22.3425 27.003 22.3425 29.9858C22.3425 32.8308 22.5114 35.4168 22.7648 37.1052C22.7718 37.1121 22.796 37.2329 22.8336 37.4205C22.948 37.9908 23.1862 39.1788 23.4405 39.6659C24.0598 40.8477 25.2704 41.5793 26.5655 41.5793H26.6781C27.5227 41.5512 29.2963 40.8196 29.2963 40.7914C32.2806 39.5533 38.1646 35.6982 40.5294 33.1375L40.6983 32.9686Z" fill="#F7AC3E" />
             </svg>
 
-         
-              <Image
-                fill
-                objectFit='cover'
-                src={data ? data.image_url : "/images/video.png"}
-              />
-       
+
+            <Image
+              loading="lazy"
+
+              fill
+              objectFit='cover'
+              src={data ? data.image_url : "/images/video.png"}
+            />
+
 
 
           </button>
@@ -149,7 +151,7 @@ const CourseDetailPage = ({ params }) => {
           </div>
 
 
-          <div className={styles.mobile}> <Aside data = {data} /> </div>
+          <div className={styles.mobile}> <Aside data={data} /> </div>
 
 
 
@@ -197,6 +199,8 @@ const CourseDetailPage = ({ params }) => {
                   </span>
                   <div className={styles.avatar}>
                     <Image
+                      loading="lazy"
+
                       alt="AV"
                       src="https://xsgames.co/randomusers/avatar.php?g=male"
                       width={2250}
@@ -243,7 +247,7 @@ const CourseDetailPage = ({ params }) => {
             <div className={styles.price}>
               <p>  <span className={styles.discount}>-10%</span> ₪165.00 14 <span>שיעורים  </span>  </p>
               <p>₪185  <span> החל מ  </span> </p>
-              
+
               <button className={styles.action_btn}>
                 <p> הוסף לסל קניות  </p>  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M5.1855 14.765C5.53716 14.765 5.823 15.0509 5.823 15.4025C5.823 15.7542 5.53716 16.0392 5.1855 16.0392C4.83383 16.0392 4.54883 15.7542 4.54883 15.4025C4.54883 15.0509 4.83383 14.765 5.1855 14.765Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -273,6 +277,8 @@ const CourseDetailPage = ({ params }) => {
                   <p> ארז כהן </p>
                   <div className={styles.avatar}>
                     <Image
+                      loading="lazy"
+
                       alt="AV"
                       src="https://xsgames.co/randomusers/avatar.php?g=male"
                       width={2250}
@@ -285,6 +291,8 @@ const CourseDetailPage = ({ params }) => {
             </div>
             <div className={styles.img}>
               <Image
+                loading="lazy"
+
                 src={"/images/discount.png"}
                 fill
                 objectFit='contain'

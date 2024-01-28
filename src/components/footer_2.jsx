@@ -19,7 +19,7 @@ function Footer() {
 
 
     <footer>
-  
+
 
 
 
@@ -34,11 +34,13 @@ function Footer() {
           >
             <button className={styles.dropdown__btn}>
               <Image
+                loading="lazy"
+
                 src='/icons/arrow-down-2.svg'
                 width={14}
                 height={14}
               />
-              <span>5 תודיחי</span> 
+              <span>5 תודיחי</span>
 
             </button>
             <div className={styles.dropdown__content} style={{ "max-height": open_Dropdown == 1 ? '150px' : '0' }} >
@@ -53,6 +55,8 @@ function Footer() {
           >
             <button className={styles.dropdown__btn}>
               <Image
+                loading="lazy"
+
                 src='/icons/arrow-down-2.svg'
                 width={14}
                 height={14}
@@ -71,6 +75,8 @@ function Footer() {
           >
             <button className={styles.dropdown__btn}>
               <Image
+                loading="lazy"
+
                 src='/icons/arrow-down-2.svg'
                 width={14}
                 height={14}
@@ -89,6 +95,8 @@ function Footer() {
           >
             <button className={styles.dropdown__btn}>
               <Image
+                loading="lazy"
+
                 src='/icons/arrow-down-2.svg'
                 width={14}
                 height={14}

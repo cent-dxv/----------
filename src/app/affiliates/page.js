@@ -11,13 +11,17 @@ function Affiliates() {
       <Navbar />
       <div className={styles.main}>
         <div className={styles.background}>
-          <Image className={styles.line}
+          <Image
+            loading="lazy"
+            className={styles.line}
             src="/images/background/Group98.png"
             fill
             object-fit="contain"
           />
           <div className={styles.dot_background_1}>
             <Image
+              loading="lazy"
+
               src="/images/background/dot_page1.png"
               fill
               object-fit="contain"
@@ -27,6 +31,8 @@ function Affiliates() {
 
           <div className={styles.dot_background_2}>
             <Image
+              loading="lazy"
+
               src="/images/background/dot_bg.png"
               fill
               object-fit="contain"
@@ -53,6 +59,8 @@ function Affiliates() {
 
             <div className={styles.card_img}>
               <Image
+                loading="lazy"
+
                 src="/images/page1/card_img1.png"
                 fill
                 objectFit='contain'
@@ -68,6 +76,8 @@ function Affiliates() {
 
             <div className={styles.card_img}>
               <Image
+                loading="lazy"
+
                 src="/images/page1/card_img2.png"
                 fill
                 objectFit='contain'
@@ -83,6 +93,8 @@ function Affiliates() {
 
             <div className={styles.card_img}>
               <Image
+                loading="lazy"
+
                 src="/images/page1/card_img3.png"
                 fill
                 objectFit='contain'

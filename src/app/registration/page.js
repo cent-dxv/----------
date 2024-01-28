@@ -16,6 +16,8 @@ function page() {
 
           <div className={styles.background_pattern}>
             <Image
+              loading="lazy"
+
               src={"/images/home/bg_pattern.svg"}
               fill
               objectFit='cover'
@@ -24,6 +26,8 @@ function page() {
 
           <div className={styles.avatar}>
             <Image
+              loading="lazy"
+
               className={styles.image_1}
               alt="GF"
               src="/images/register/ellipse-46.svg"
@@ -36,6 +40,8 @@ function page() {
 
           <div className={styles.avatar}>
             <Image
+              loading="lazy"
+
               className={styles.image_2}
 
               alt="GF"
@@ -50,12 +56,14 @@ function page() {
           <div className={styles.avatar}>
 
             <Image
+              loading="lazy"
+
               className={styles.image_3}
               alt="GF"
               src="/images/register/ellipse-42.png"
               width={1000}
               height={1000}
-              loading="lazy"
+            
             // layout="responsive"
             />
           </div>
@@ -63,6 +71,8 @@ function page() {
 
           <div className={styles.avatar}>
             <Image
+              loading="lazy"
+
               className={styles.image_4}
 
               alt="GF"
@@ -77,6 +87,8 @@ function page() {
 
           <div className={styles.avatar}>
             <Image
+              loading="lazy"
+
               className={styles.image_5}
 
               alt="GF"
@@ -90,6 +102,8 @@ function page() {
 
           <div className={styles.avatar}>
             <Image
+              loading="lazy"
+
               className={styles.image_6}
 
               alt="GF"

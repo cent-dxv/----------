@@ -136,6 +136,8 @@ function Home() {
       <div className={styles.landing}>
         <div className={styles.background_pattern}>
           <Image
+            loading="lazy"
+
             src={"/images/home/bg_pattern.svg"}
             fill
             objectFit='cover'
@@ -144,6 +146,8 @@ function Home() {
 
         <div className={styles.student_img}>
           <Image
+            loading="lazy"
+
             src={"/images/home/student_lg.png"}
             fill
             objectFit='contain'
@@ -178,6 +182,8 @@ function Home() {
 
               <div className={styles.avatar}>
                 <Image
+                  loading="lazy"
+
                   alt="GF"
                   src="https://xsgames.co/randomusers/avatar.php?g=female"
                   width={2250}
@@ -188,6 +194,8 @@ function Home() {
 
               <div className={styles.avatar}>
                 <Image
+                  loading="lazy"
+
                   alt="GF"
                   src="https://xsgames.co/randomusers/avatar.php?g=male"
                   width={2250}
@@ -198,6 +206,8 @@ function Home() {
 
               <div className={styles.avatar}>
                 <Image
+                  loading="lazy"
+
                   alt="GF"
                   src="https://xsgames.co/randomusers/avatar.php?g=female"
                   width={2250}
@@ -208,6 +218,8 @@ function Home() {
 
               <div className={styles.avatar}>
                 <Image
+                  loading="lazy"
+
                   alt="GF"
                   src="https://xsgames.co/randomusers/avatar.php?g=male"
                   width={2250}
@@ -230,6 +242,8 @@ function Home() {
 
         <div className={styles.background}>
           <Image
+            loading="lazy"
+
             className={styles.first_line}
 
             src={"/images/home/line_background.png"}
@@ -260,18 +274,18 @@ function Home() {
               </div>
               <Course_dropdown isOpen={open_Dropdown} setIsOpen={setDropdown} setActive_tab={setActive_tab} data={data} setsub_Active_tab={changeInitialSlide} />
 
-              {tab_items  && (
-              <div className={styles.description}
-              style={open_Dropdown ?  {opacity:0.2} : {opacity:1}}
-              >
+              {tab_items && (
+                <div className={styles.description}
+                  style={open_Dropdown ? { opacity: 0.2 } : { opacity: 1 }}
+                >
 
-                <div>
-                  <h1>{tab_items?.heading}  </h1>
-                  <p>
-                    {tab_items?.description}
-                  </p>
-                </div>
-              </div>)}
+                  <div>
+                    <h1>{tab_items?.heading}  </h1>
+                    <p>
+                      {tab_items?.description}
+                    </p>
+                  </div>
+                </div>)}
 
 
             </div>
@@ -295,16 +309,20 @@ function Home() {
                               {list_item.map((li_item) => (
                                 <button key={index} style={li_item.position}>
                                   {li_item.title}
-                                  <Image src={li_item.image} width={14} height={14} />
-                            </button>
+                                  <Image
+                                    loading="lazy"
+                                    src={li_item.image} width={14} height={14} />
+                                </button>
                               ))}
                             </span>
                           ) : (
-                            <button key={index} style={list_item.position}> 
+                            <button key={index} style={list_item.position}>
 
                               {list_item.title}
-                              <Image src={list_item.image} width={14} height={14} />
-                          </button>
+                              <Image
+                                loading="lazy"
+                                src={list_item.image} width={14} height={14} />
+                            </button>
                           )
                       )}
 
@@ -339,14 +357,18 @@ function Home() {
                                   {list_item.map((li_item) => (
                                     <button key={index} style={li_item.position}>
                                       {li_item.title}
-                                      <Image src={li_item.image} width={14} height={14} />
+                                      <Image
+                                        loading="lazy"
+                                        src={li_item.image} width={14} height={14} />
                                     </button>
                                   ))}
                                 </span>
                               ) : (
                                 <button key={index} style={list_item.position}>
                                   {list_item.title}
-                                  <Image src={list_item.image} width={14} height={14} />
+                                  <Image
+                                    loading="lazy"
+                                    src={list_item.image} width={14} height={14} />
                                 </button>
                               )
                           )}
@@ -370,6 +392,8 @@ function Home() {
             <div className={styles.banner_img}>
 
               <Image
+                loading="lazy"
+
                 className={styles.descktop}
                 src={"/images/home/banner.png"}
                 fill
@@ -377,6 +401,8 @@ function Home() {
               />
 
               <Image
+                loading="lazy"
+
                 className={styles.mobile}
                 src={"/images/home/banner_mobile.png"}
                 fill
@@ -477,6 +503,8 @@ function Home() {
 
           <div className={styles.background_pattern}>
             <Image
+              loading="lazy"
+
               src={"/images/home/bg_pattern.svg"}
               fill
               objectFit='cover'
@@ -486,6 +514,8 @@ function Home() {
           <div className={styles.img}>
 
             <Image
+              loading="lazy"
+
               src={"/images/home/Group72.png"}
               fill
               objectFit='contain'
@@ -513,6 +543,8 @@ function Home() {
 
         <div className={styles.background2}>
           <Image
+            loading="lazy"
+
             className={styles.line_bg2}
             src={"/images/home/line_bg_2.png"}
             fill
@@ -528,6 +560,8 @@ function Home() {
         <div className={styles.section}>
           <div className={styles.img}>
             <Image
+              loading="lazy"
+
               src={"/images/home/card/Group194.png"}
               fill
               objectFit='contain'
@@ -563,6 +597,8 @@ function Home() {
           </div>
           <div className={styles.img}>
             <Image
+              loading="lazy"
+
               src={"/images/home/card/Group199.png"}
               fill
               objectFit='contain'
@@ -574,6 +610,8 @@ function Home() {
         <div className={styles.section}>
           <div className={styles.img}>
             <Image
+              loading="lazy"
+
               src={"/images/home/card/Group200.png"}
               fill
               objectFit='contain'
@@ -608,6 +646,8 @@ function Home() {
           </div>
           <div className={styles.img}>
             <Image
+              loading="lazy"
+
               src={"/images/home/card/Group201.png"}
               fill
               objectFit='contain'

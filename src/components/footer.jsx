@@ -22,6 +22,8 @@ function Footer() {
       <div className={`${styles.first_layer} `}>
 
         <Image
+          loading="lazy"
+
           className={styles.backgroudn_img}
           src="/images/footer-1.png"
           fill
@@ -31,6 +33,8 @@ function Footer() {
 
         <div className={styles.first_layer_images}>
           <Image
+            loading="lazy"
+
             src="/images/footer-parteners.png"
             fill
             objectFit='contain'
@@ -63,6 +67,8 @@ function Footer() {
       <div className={`${styles.golden_layer} `}>
 
         <Image
+          loading="lazy"
+
           className={styles.backgroudn_img}
           src="/images/golden_layer.png"
           fill
@@ -89,7 +95,7 @@ function Footer() {
             </svg>
           </span>
           <span>
-            <input  required type="email" placeholder='ל”אוד' />
+            <input required type="email" placeholder='ל”אוד' />
 
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
               <path d="M12.9507 5.79584L9.75162 8.37154C9.14621 8.84619 8.29753 8.84619 7.69212 8.37154L4.46558 5.79584" stroke="#8B5609" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -102,7 +108,7 @@ function Footer() {
               <ellipse cx="6.68411" cy="4.45852" rx="3.58352" ry="3.58352" stroke="#8B5609" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.00001 13.026C0.999049 12.7741 1.05539 12.5253 1.16477 12.2984C1.50802 11.6119 2.47598 11.248 3.27919 11.0833C3.85846 10.9596 4.44573 10.8771 5.03663 10.8361C6.13063 10.74 7.23095 10.74 8.32495 10.8361C8.9158 10.8775 9.50304 10.9601 10.0824 11.0833C10.8856 11.248 11.8536 11.5775 12.1968 12.2984C12.4168 12.761 12.4168 13.298 12.1968 13.7606C11.8536 14.4814 10.8856 14.8109 10.0824 14.9688C9.5038 15.0976 8.91632 15.1825 8.32495 15.2228C7.43453 15.2983 6.53994 15.3121 5.64761 15.264C5.44166 15.264 5.24258 15.264 5.03663 15.2228C4.44747 15.183 3.86224 15.0981 3.28605 14.9688C2.47598 14.8109 1.51489 14.4814 1.16477 13.7606C1.05595 13.531 0.999664 13.2801 1.00001 13.026Z" stroke="#8B5609" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-          </span> 
+          </span>
 
           <button type="submit" className={styles.contact_dart_mobile}>
             חלש
@@ -123,6 +129,8 @@ function Footer() {
           >
             <button className={styles.dropdown__btn}>
               <Image
+                loading="lazy"
+
                 src='/icons/arrow-down-2.svg'
                 width={14}
                 height={14}
@@ -142,6 +150,8 @@ function Footer() {
           >
             <button className={styles.dropdown__btn}>
               <Image
+                loading="lazy"
+
                 src='/icons/arrow-down-2.svg'
                 width={14}
                 height={14}
@@ -160,6 +170,8 @@ function Footer() {
           >
             <button className={styles.dropdown__btn}>
               <Image
+                loading="lazy"
+
                 src='/icons/arrow-down-2.svg'
                 width={14}
                 height={14}
@@ -178,6 +190,8 @@ function Footer() {
           >
             <button className={styles.dropdown__btn}>
               <Image
+                loading="lazy"
+
                 src='/icons/arrow-down-2.svg'
                 width={14}
                 height={14}

@@ -22,6 +22,8 @@ function Course_Main() {
 
         <div className={styles.line}>
           <Image
+            loading="lazy"
+
             src="/images/background/line.png"
             fill
             object-fit="contain"
@@ -33,6 +35,8 @@ function Course_Main() {
 
         <div className={styles.dot_background_1}>
           <Image
+            loading="lazy"
+
             src="/images/background/dot_background.png"
             fill
             object-fit="contain"
@@ -44,6 +48,8 @@ function Course_Main() {
 
         <div className={styles.dot_background_2}>
           <Image
+            loading="lazy"
+
             src="/images/background/dot_background.png"
             fill
             object-fit="contain"
@@ -55,6 +61,8 @@ function Course_Main() {
 
         <div className={styles.dot_background_3}>
           <Image
+            loading="lazy"
+
             src="/images/background/dot_background.png"
             fill
             object-fit="contain"
@@ -107,6 +115,8 @@ function Course_Main() {
 
         <div className={styles.red_line}>
           <Image
+            loading="lazy"
+
             src="/images/background/red_line.png"
             fill
             object-fit="contain"

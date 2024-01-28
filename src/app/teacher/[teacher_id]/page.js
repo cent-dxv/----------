@@ -53,6 +53,8 @@ function Tearcher_page() {
 
         <div className={styles.background_pattern}>
           <Image
+            loading="lazy"
+
             src={"/images/home/bg_pattern.svg"}
             fill
             objectFit='cover'
@@ -127,6 +129,8 @@ function Tearcher_page() {
         </div>
         <div className={styles.teacher_img}>
           <Image
+            loading="lazy"
+
             src={'/images/page1/teacher_img.png'}
             fill
             objectFit='cover'
@@ -180,6 +184,8 @@ function Tearcher_page() {
                 </span>
                 <div className={page_status_style.avatar}>
                   <Image
+                    loading="lazy"
+
                     alt="AV"
                     src="https://xsgames.co/randomusers/avatar.php?g=male"
                     width={2250}
