@@ -55,6 +55,7 @@ function page() {
               src="/images/register/ellipse-42.png"
               width={1000}
               height={1000}
+              loading="lazy"
             // layout="responsive"
             />
           </div>
