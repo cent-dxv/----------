@@ -13,7 +13,7 @@ import Navigation_dropdown from '../container/navigation_dropdown'
 import WindowSize from '../utils/windowsize'
 import { CartContext } from '../app/contextApi'
 import Cart_Dropdown from '../container/cart_drop'
-
+import { useRouter } from 'next/navigation';
 
 // import navigation_dropdown from '../container/navigation_dropdown'
 
@@ -21,6 +21,7 @@ import Cart_Dropdown from '../container/cart_drop'
 function Navbar() {
   const [open, setOpen] = useState(false);
   const [open_Dropdown, setDropdown] = useState(false);
+  const router = useRouter();
 
 
   const { width, height } = WindowSize()
@@ -37,7 +38,8 @@ function Navbar() {
               תורבחתה
             </button>
 
-            <button>
+            <button onClick={() => router.push('/registration')}>
+
               הרשמה
             </button>
 
